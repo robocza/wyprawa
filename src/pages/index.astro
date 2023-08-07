@@ -1,0 +1,49 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
+import Content from '@components/about/Content.md';
+import Footer from '@components/Footer.astro';
+---
+
+<Layout title="Wyprawa Robocza #6 - Pantopia">
+    <main class="relative text-white">
+        <div class="relative min-h-[480px] lg:min-h-[640px] h-screen pantopian-gradient px-4 pb-8 box-content">
+            <Central>
+                <div class="mb-4 inline-block text-center">
+                    <a href="https://mvu.pl"><img class="text-center" src="/assets/mvu.svg" alt="Minimum Viable Utopia" /></a>
+                </div>
+                <div class="mb-4 block text-2xl sm:text-3xl uppercase">Wyprawa Robocza #6</div>
+                <div class="mb-2 inline-block text-center"><img class="h-12 sm:h-16" src="/assets/pantopia.svg" alt="Pantopia" /></div>
+                <div class="mb-10 block text-2xl sm:text-3xl uppercase">15.09-17.09.2023</div>
+                <div class="lg:absolute lg:bottom-16 lg:left-0 lg:right-0 text-center">
+                    <a
+                        class="inline-block w-48 rounded-lg border-solid border-2 border-white px-4 py-2 uppercase hover:bg-white text-white hover:text-black hover:opacity-50"
+                        href="https://forms.gle/VcEivDYgTK9pK66E7">Zapisz się</a
+                    >
+                    <div class="block my-10">
+                        <a class="text-white hover:opacity-50" href="#o-wyprawie">Przeczytaj o Wyprawie ↓</a>
+                    </div>
+                </div>
+            </Central>
+        </div>
+        <div id="o-wyprawie" class="bg-black">
+            <div class="mx-auto max-w-2xl pt-8 px-4">
+                <div class="mb-2 inline-block text-center"><img class="h-10 mb-2" src="/assets/pantopia.svg" alt="Pantopia" /></div>
+                <div
+                    class="prose:h1:text-xl prose:h2:text-lg prose:a:hover:underline prose-invert block prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4 prose-ul:mb-4 prose-li:mb-4 prose-li:list-inside prose-li:list-decimal"
+                >
+                    <Content />
+                </div>
+                <div class="text-center">
+                    <a
+                        class="mt-8 mb-8 inline-block mx-auto text-center w-48 rounded-lg border-solid border-2 border-white px-4 py-2 uppercase hover:bg-white text-white hover:text-black"
+                        href="https://forms.gle/VcEivDYgTK9pK66E7">Zapisz się</a
+                    >
+                </div>
+            </div>
+            <div class="mt-8 mx-auto max-w-2xl px-4">
+                <Footer />
+            </div>
+        </div>
+    </main>
+</Layout>

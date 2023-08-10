@@ -1,7 +1,8 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Central from '@layouts/elements/arrangement/Central.astro';
-import Content from '@components/about/Content.md';
+import About from '@components/about/Content.md';
+import FAQ from '@components/faq/Content.md';
 import Footer from '@components/Footer.astro';
 ---
 
@@ -30,9 +31,14 @@ import Footer from '@components/Footer.astro';
             <div class="mx-auto max-w-2xl pt-8 px-4">
                 <div class="mb-2 inline-block text-center"><img class="h-10 mb-2" src="/assets/pantopia.svg" alt="Pantopia" /></div>
                 <div
-                    class="prose:h1:text-xl prose:h2:text-lg prose:a:hover:underline prose-invert block prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4 prose-ul:mb-4 prose-li:mb-4 prose-li:list-inside prose-li:list-decimal"
+                    class="prose prose:h1:text-xl prose:h2:text-lg hover:prose-a:underline hover:prose-a:text-black hover:prose-a:bg-white prose-invert prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4 prose-ul:mb-4 prose-li:mb-4"
                 >
-                    <Content />
+                    <About />
+                </div>
+                <div
+                    class="prose prose:h1:text-xl prose:h2:text-lg hover:prose-a:underline hover:prose-a:text-black hover:prose-a:bg-white prose-invert prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4"
+                >
+                    <FAQ />
                 </div>
                 <div class="text-center">
                     <a

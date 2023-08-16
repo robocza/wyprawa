@@ -14,6 +14,10 @@ export default defineConfig({
     integrations: [
         tailwind(),
     ],
+    redirects: {
+        '/polityka-prywatnosci': '/polityka-prywatnosci.pdf',
+        '/regulamin': '/regulamin.pdf',
+    },
     vite: {
         server: {
             watch: {

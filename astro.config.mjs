@@ -17,6 +17,7 @@ export default defineConfig({
     redirects: {
         '/polityka-prywatnosci': '/polityka-prywatnosci.pdf',
         '/regulamin': '/regulamin.pdf',
+        '/platnosc': 'https://buy.stripe.com/4gw15z6CCaamcyQeUV',
     },
     vite: {
         server: {

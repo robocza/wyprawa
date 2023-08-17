@@ -1,0 +1,333 @@
+
+body{
+	padding: 0;
+	margin: 0; 
+	font-size: 18px;
+	font-family: 'gt_americaregular';
+	font-weight: 100; 
+	background-color: #F8F8F8; }
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	height: 100vh; }
+
+.navigation{
+	width: 400px;
+	padding-right: 30px;
+	padding-left: 20px;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around; }
+
+.heart{
+	padding-left: 20px;
+	padding-right: 20px; 
+	padding-bottom: 20px;
+	display: flex;
+	width: 100%;
+	flex-direction: column; 
+	overflow: scroll; }
+	
+.content-box{
+	margin-bottom: 30px;
+	padding: 0px 30px 30px 30px;
+	max-width: 1200px; }
+
+.content{
+	margin-top: 3em;
+ }
+
+.table_of_content {
+	max-width: 1200px;
+}
+
+/*fonts*/
+
+.title{
+	padding: 0px;
+	font-size: 4em;
+	margin-bottom: 0.25em;
+}
+
+
+h2 {font-size: 1.15em;  
+	color: #827b88;
+	text-align: left;}
+
+.subtitle{
+	font-size: 1.5em;  
+	color: #000000;
+	text-align: left;
+	margin-top: 0.25em;}	
+
+.centered{
+	margin: auto;
+	text-align: center;	}
+
+.modules{
+	margin-top: 40px;
+	margin-left: -40px;
+	list-style-type: none; 
+	font-size: .7em;
+	flex-grow: 1; }
+
+p, ol, ul{
+	max-width: 650px;
+	font-size: 1em;
+	line-height: 1.3em;
+	margin-bottom: 1.5em; }
+	
+li{
+	margin-top: 12px; }
+
+
+.purple{
+	color: #5d3d85; }
+
+a{
+	color: #333; }
+
+.gray{
+	color: #827b88; }
+
+.bottomicon{
+	width: 200px; 
+	margin: auto;  }
+
+.breadcrumb{
+	text-align: right;
+	text-align: right; 
+	font-size: 11px; }
+
+.big-hermies{
+	position: absolute; 
+	right: 0; 
+	bottom: 0; 
+	width: 400px }
+
+.lil-hermies{
+	display: none; }
+	
+.intro{
+	height: auto;
+}
+
+.start-text{
+	margin-top: 120px;
+}
+@media (max-width: 667px){
+	.intro {
+	}
+	.heart{
+		width: auto; 
+		padding-left: 10px;
+		padding-right: 10px; }
+		
+	.navigation{
+		margin-left: auto;
+		width: 100%; }
+
+	.flex-container{
+		height: auto;
+		flex-direction: column-reverse; }
+		
+	.modules{
+		font-size: 1em;
+		margin-left: auto;
+		margin: auto; }
+		
+	li{
+		margin-top: 2em; }
+		
+	.content-box{
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 5px;  }
+		
+	.title {
+		padding: 5px; 
+		font-size: 1.5em; }
+		
+	.content{
+		padding: 7px;
+		margin-left: auto; }
+		
+	.big-hermies{
+		display: none;	}
+	
+	.lil-hermies{
+		display: block;
+		width: 150px;
+		margin-left: auto;
+		margin-right: 0px;
+		
+	}
+	.start-text{
+		margin-top: 0px;
+	}
+}
+
+	
+/*glitch effetc*/
+
+#logo {
+	margin-top: 3em;
+	margin-right: 3em;
+	float: right;
+}
+
+.first, .second{
+  padding: 2rem;  
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.first{
+  background: #F8F8F8;
+}
+.second{
+  background: #F8F8F8;
+}
+.second h4{
+  text-align: left;
+  margin: -1rem 0 2rem;
+  color: #F8F8F8;
+}
+
+.glitch {
+  position: relative;
+  font-size: 250px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #FF8000;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+	top: -10px;
+  left: 10px;
+  background: #F8F8F8;
+  text-shadow: 2px 0 #FFA81A;
+  animation: glitch-anima 3s infinite linear alternate-reverse;
+  color: #FF8000;
+}
+/*#FF561A*/
+
+.glitch::after {
+  clip: rect(10px, 200px, 30px, 0);
+  left: -10px;
+  text-shadow: -2px 0 940303;
+  background: #F8F8F8;
+  animation: glitch-anim 1s infinite linear alternate-reverse;
+  color: #FF8000 ;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(10px, 400px, 15px, 0);
+  }
+  20% {
+    clip: rect(250px, 400px, 26px, 0);
+  }
+  30% {
+    clip: rect(10px, 400px, 150px, 0);
+  }
+  45% {
+    clip: rect(100px, 400px, 15px, 0);
+  }
+  60% {
+    clip: rect(30px, 400px, 60px, 0);
+  }
+  70% {
+    clip: rect(100px, 400px, 50px, 0);
+  }
+  80% {
+    clip: rect(300px, 400px, 55px, 0);
+  }
+  100% {
+    clip: rect(240px, 400px, 45px, 0);
+	}
+}
+
+@keyframes glitch-anima {
+  0% {
+    clip: rect(30px, 400px, 200px, 0);
+  }
+  10% {
+    clip: rect(26px, 400px, 28px, 0);
+  }
+  30% {
+    clip: rect(30px, 400px, 60px, 0);
+  }
+  40% {
+    clip: rect(100px, 400px, 50px, 0);
+  }
+  60% {
+    clip: rect(150px, 400px, 100px, 0);
+  }
+  100% {
+    clip: rect(40px, 400px, 10px, 0);
+  }
+}
+
+#latarniowiec {
+	width: 300px;
+	position: relative;
+	top: -30px;
+}
+
+.selected_item a {
+	color: #000000;
+	background-color: #FF8000;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+.bold {
+	font-family: 'gt_americabold';
+}
+
+.italic {
+	font-family: 'gt_americaregular_italic';
+}
+
+.quote {
+	padding: 2em;
+	font-size:0.75em;
+}
+
+.picture {
+	max-width: 600px;
+	margin: 1.5em;
+}
+
+.picture img {
+	width:100%;
+}
+
+.bibliografia {
+	margin-top: 3em;
+}
+
+.quoteauthor {
+	text-align: right;
+	margin-bottom: 3em;
+	margin-top: 1em;
+	padding: 0;
+	font-family: 'gt_americaregular_italic';
+	font-size: 0.75em;
+}

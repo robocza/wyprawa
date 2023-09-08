@@ -3,11 +3,13 @@ import Layout from '@layouts/Layout.astro';
 import Central from '@layouts/elements/arrangement/Central.astro';
 import Footer from '@components/Footer.astro';
 import Agenda from '@components/Agenda.astro';
+import Navigation from '@components/Navigation.astro';
 ---
 
 <Layout title="Wyprawa Robocza #6 - Pantopia">
     <main class="relative text-white">
         <div class="pantopian-gradient relative box-content h-screen min-h-[480px] px-4 pb-8 lg:min-h-[640px]">
+            <Navigation />
             <Central>
                 <div class="mb-4 inline-block text-center">
                     <a href="https://mvu.pl"><img class="text-center" src="/assets/mvu.svg" alt="Minimum Viable Utopia" /></a>

@@ -18,6 +18,7 @@ export default defineConfig({
         '/polityka-prywatnosci': '/polityka-prywatnosci.pdf',
         '/regulamin': '/regulamin.pdf',
         '/platnosc': 'https://buy.stripe.com/4gw15z6CCaamcyQeUV',
+        '/kup-plakat': 'https://buy.stripe.com/00gaG92mm6Ya8iAfZ2',
     },
     vite: {
         server: {

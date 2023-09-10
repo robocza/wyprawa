@@ -19,6 +19,7 @@ export default defineConfig({
         '/regulamin': '/regulamin.pdf',
         '/platnosc': 'https://buy.stripe.com/4gw15z6CCaamcyQeUV',
         '/kup-plakat': 'https://buy.stripe.com/00gaG92mm6Ya8iAfZ2',
+        '/kup-plakat-z-robalem': 'https://buy.stripe.com/5kA8y10ee96igP6bIN',
     },
     vite: {
         server: {

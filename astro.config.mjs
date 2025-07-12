@@ -8,7 +8,7 @@ export default defineConfig({
     // adapter: netlify(),
     server: {
         host: true,
-        port: 3000
+        port: 4321
     },
     site: "https://wyprawa.robocza.org",
     integrations: [

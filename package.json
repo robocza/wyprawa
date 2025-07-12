@@ -1,36 +1,39 @@
 {
-  "license": "proprietary",
-  "name": "wyprawa-robocza",
-  "type": "module",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev --host",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "cs-check": "yarn lint-prettier --check",
-    "cs-fix": "yarn lint-prettier --write",
-    "lint-prettier": "prettier \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\""
-  },
-  "dependencies": {
-    "@astrojs/netlify": "^2.6.0",
-    "@astrojs/tailwind": "^4.0.0",
-    "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.10.14",
-    "nanostores": "^0.9.3",
-    "photoswipe": "^5.3.8",
-    "tailwindcss": "^3.3.3"
-  },
-  "devDependencies": {
-    "prettier": "^3.0.2",
-    "prettier-config-standard": "^7.0.0",
-    "prettier-plugin-astro": "^0.11.1",
-    "prettier-plugin-tailwindcss": "^0.5.3"
-  },
-  "engines": {
-    "node": "^20.5.0"
-  },
-  "engineStrict": true
+    "license": "proprietary",
+    "name": "wyprawa-robocza",
+    "type": "module",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev --host",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "cs-check": "run lint-prettier --check",
+        "cs-fix": "run lint-prettier --write",
+        "lint-prettier": "prettier \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\""
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.9.4",
+        "@astrojs/netlify": "^6.4.1",
+        "@astrojs/ts-plugin": "^1.9.0",
+        "@tailwindcss/typography": "^0.5.16",
+        "@tailwindcss/vite": "^4.1.7",
+        "astro": "^5.11.0",
+        "flowbite": "^3.1.2",
+        "i18next": "^25.2.1",
+        "tailwindcss": "^4.1.11",
+        "typescript": "^5.8.3"
+    },
+    "engines": {
+        "node": "^22.14.0"
+    },
+    "devDependencies": {
+        "prettier": "^3.6.2",
+        "prettier-config-standard": "^7.0.0",
+        "prettier-plugin-astro": "^0.14.1",
+        "prettier-plugin-tailwindcss": "^0.6.14"
+    },
+    "engineStrict": true
 }

@@ -12,8 +12,8 @@ Nie. Możesz być zupełnie z innej bańki. Tylko rzuć okiem na agendy poniżej
 
 Nie. Możesz też zaproponować luźniejszy temat. W minionych latach rozmawiałyśmy na przykład o rapie. Przykładowe tematy znajdziesz w linku z [Wyprawy 2020](https://mvu.pl/wyprawa/). Możesz też rzucić okiem na zapisane stories na naszym [Instagramie](https://www.instagram.com/grupa.robocza/).
 
--   [Wyprawa 2020 || Poręba](https://mvu.pl/wyprawa/)
--   [Wyprawa 2021 || Jaworzno](https://eden.mvu.pl/)
+- [Wyprawa 2020 || Poręba](https://mvu.pl/wyprawa/)
+- [Wyprawa 2021 || Jaworzno](https://eden.mvu.pl/)
 
 : ̗̀➛ ✎ Kto organizuje Wyprawę?
 

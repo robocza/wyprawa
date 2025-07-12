@@ -1,29 +1,33 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 // import netlify from '@astrojs/netlify/functions';
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
     // output: 'server',
     // adapter: netlify(),
-    server: {
-        host: true,
-        port: 4321
+    i18n: {
+        defaultLocale: 'pl',
+        locales: ['en', 'pl'],
+        routing: {
+            prefixDefaultLocale: false,
+        },
     },
-    site: "https://wyprawa.robocza.org",
-    integrations: [
-        tailwind(),
-    ],
+    server: {
+        allowedHosts: true,
+    },
+    site: 'https://wyprawa.robocza.org',
     redirects: {
         '/polityka-prywatnosci': '/polityka-prywatnosci.pdf',
         '/regulamin': '/regulamin.pdf',
         '/platnosc': 'https://buy.stripe.com/4gw15z6CCaamcyQeUV',
     },
     vite: {
+        plugins: [tailwindcss()],
         server: {
             watch: {
-                ignored: ['**/.idea/workspace.xml', '.idea/workspace.xml.tmp']
-            }
-        }
-    }
+                ignored: ['**/.idea/workspace.xml', '**/.idea/workspace.xml.tmp'],
+            },
+        },
+    },
 });

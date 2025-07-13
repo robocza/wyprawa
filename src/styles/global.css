@@ -3,3 +3,37 @@
 @plugin "@tailwindcss/typography";
 
 @config "../../tailwind.config.cjs";
+
+@font-face {
+    font-family: MonumentGrotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('/fonts/MonumentGrotesk-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: EdwardianScriptITC;
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('/fonts/EdwardianScriptITC.ttf') format('truetype');
+}
+
+@counter-style circled-decimal {
+    system: fixed 0;
+    symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';
+    /* symbols: '⓪' '①' '②' '③' '④' '⑤' '⑥' '⑦' '⑧' '⑨' '⑩' '⑪' '⑫' '⑬' '⑭' '⑮' '⑯' '⑰' '⑱' '⑲' '⑳' '㉑' '㉒' '㉓' '㉔' '㉕' '㉖' '㉗' '㉘' '㉙' '㉚' '㉛' '㉜' '㉝' '㉞' '㉟' '㊱' '㊲' '㊳' '㊴' '㊵' '㊶' '㊷' '㊸' '㊹' '㊺' '㊻' '㊼' '㊽' '㊾' '㊿'; */
+    suffix: ' ';
+}
+
+@theme {
+    --breakpoint-xxs: 360px;
+    --breakpoint-xs: 480px;
+    --color-nut: #4C4035;
+    --color-lilac: #758AF3;
+    --color-canary: #F5F3D1;
+    --color-nut-dark: #403A34;
+    --color-canary-dark: #F2EEB1;
+    --font-body: 'MonumentGrotesk', var(--font-sans);
+    --font-decorative: 'EdwardianScriptITC', var(--font-serif);
+}

@@ -1,34 +1,36 @@
 ---
 import MailLink from '@components/MailLink.astro';
 import Link from '@components/Link.astro';
+import LogoGrupaRobocza from "../components/assets/LogoGR.astro";
+import Container from '../layouts/elements/Container.astro';
 ---
-
-<footer class="bg-black py-4 text-white">
-    <div class="my-8 flex w-full flex-col sm:flex-row sm:justify-between">
-        <div>
-            <a href="https://grupa.robocza.org">
-                <img src="/assets/logo-grupa-robocza-white.svg" alt="Grupa Robocza" />
-            </a>
-            <p class="mt-4 text-base">
-                <MailLink email="grupa@robocza.org" className="underline hover:bg-white hover:text-black" />
-            </p>
-            <p class="mt-4 text-base">
-                ul. Wilhelma Feldmana 4/3<br />
-                31-130 Kraków
-            </p>
-            <div class="mt-4 text-base">
-                <Link url="/regulamin" text="Regulamin" className="mr-4 underline hover:bg-white hover:text-black" />
-                <Link url="/polityka-prywatnosci" text="Polityka prywatności" className="underline hover:bg-white hover:text-black" />
+<footer class="bg-nut-dark text-canary pt-32 pb-16">
+    <Container>
+        <div class="w-full gap-8 lg:gap-32 grid grid-cols-3 text-lg">
+            <div>
+                <a href="https://grupa.robocza.org" title="Grupa Robocza">
+                    <LogoGrupaRobocza height={60}/>
+                </a>
+            </div>
+            <div>
+                <div>
+                    <MailLink email="grupa@robocza.org" className="underline hover:bg-canary hover:text-nut" />
+                </div>
+                <div>
+                    ul. Kopernika 19A, Kraków
+                </div>
+                <div class="mt-12">
+                    Worldwide 🌏 {new Date().getFullYear()}
+                </div>
+            </div>
+            <div>
+                <div>
+                    <Link url="/regulamin" text="Regulamin" className="underline hover:bg-canary hover:text-nut" />
+                </div>
+                <div>
+                    <Link url="/polityka-prywatnosci" text="Polityka prywatności" className="underline hover:bg-canary hover:text-nut" />
+                </div>
             </div>
         </div>
-        <div class="sm:place-self-end sm:text-right">
-            <p class="mt-2 text-base">
-                <Link url="https://pl.linkedin.com/company/grupa-robocza" text="LinkedIn" className="underline hover:bg-white hover:text-black" />
-            </p>
-            <p class="mt-2 text-base">
-                <Link url="https://www.instagram.com/grupa.robocza/" text="Instagram" className="underline hover:bg-white hover:text-black" />
-            </p>
-            <p class="mt-2 text-base">Worldwide 🌏 {new Date().getFullYear()}</p>
-        </div>
-    </div>
+    </Container>
 </footer>

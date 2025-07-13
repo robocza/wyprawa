@@ -3,49 +3,56 @@ import Layout from '@layouts/Layout.astro';
 import Central from '@layouts/elements/arrangement/Central.astro';
 import About from '@components/about/Content.md';
 import FAQ from '@components/faq/Content.md';
-import Footer from '@components/Footer.astro';
-import Navigation from '@components/Navigation.astro';
+import Information from '@components/information/Content.md';
+import Footer from '../components/Footer.astro';
+import Title from "../components/Title.astro";
+import Button from '../components/Button.astro';
+import Header from '../components/Header.astro';
+import Container from '../layouts/elements/Container.astro';
+import SectionProse from '../components/SectionProse.astro';
+import SectionBlock from '../components/SectionBlock.astro';
+import SectionCallToAction from '../components/SectionCallToAction.astro';
+import Jumbotron from '../components/Jumbotron.astro';
 ---
 
-<Layout title="Wyprawa Robocza #6 - Pantopia">
-    <main class="relative text-white">
-        <div class="pantopian-gradient relative box-content h-screen min-h-[480px] px-4 pb-8 lg:min-h-[640px]">
-            <Navigation />
-            <Central>
-                <div class="mb-4 inline-block text-center">
-                    <a href="https://mvu.pl"><img class="text-center" src="/assets/mvu.svg" alt="Minimum Viable Utopia" /></a>
-                </div>
-                <a href="/" class="mb-4 block text-2xl uppercase sm:text-3xl">Wyprawa Robocza #6</a>
-                <a href="/" class="mb-2 inline-block text-center"><img class="h-12 sm:h-16" src="/assets/pantopia.svg" alt="Pantopia" /></a>
-                <div class="mb-10 block text-2xl uppercase sm:text-3xl">15.09-17.09.2023</div>
-                <div class="text-center lg:absolute lg:right-0 lg:bottom-16 lg:left-0">
-                    <a
-                        class="inline-block w-48 rounded-lg border-2 border-solid border-white px-4 py-2 text-white uppercase hover:bg-white hover:text-black hover:opacity-50"
-                        href="/agenda#agenda">Zobacz agendę</a
-                    >
-                    <div class="my-6 block">
-                        <a class="text-white hover:opacity-50" href="#o-wyprawie">Przeczytaj o Wyprawie ↓</a>
+<Layout title="Wyprawa Robocza #7 — Znów">
+    <Header />
+    <main class="font-body">
+        <Jumbotron>
+            <div class="w-full">
+                <p class="text-left">12.09.2025 - 14.09.2025</p>
+                <h1 class="text-5xl sm:text-8xl lg:text-10xl 2xl:text-16xl uppercase font-serif"><Title/></h1>
+                <Central>
+                    <div class="mt-4 2xl:mt-8">
+                        <Button text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
                     </div>
-                </div>
-            </Central>
-        </div>
-        <div id="o-wyprawie" class="bg-black">
-            <div class="mx-auto max-w-2xl px-4 pt-8">
-                <div class="mb-2 inline-block text-center"><img class="mb-2 h-10" src="/assets/pantopia.svg" alt="Pantopia" /></div>
-                <div
-                    class="prose:h1:text-xl prose:h2:text-lg prose prose-invert prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4 hover:prose-a:bg-white hover:prose-a:text-black hover:prose-a:underline prose-ul:mb-4 prose-li:mb-4"
-                >
-                    <About />
-                </div>
-                <div
-                    class="prose:h1:text-xl prose:h2:text-lg prose prose-invert prose-headings:mb-4 prose-headings:mt-8 prose-headings:text-3xl prose-p:mb-4 hover:prose-a:bg-white hover:prose-a:text-black hover:prose-a:underline"
-                >
-                    <FAQ />
-                </div>
+                </Central>
             </div>
-            <div class="mx-auto mt-8 max-w-2xl px-4">
-                <Footer />
-            </div>
-        </div>
+        </Jumbotron>
+        <section id="o-wyprawie" class="scroll-mt-[80px] bg-nut-dark text-canary">
+            <Container>
+                <div class="w-full grid grid-cols-3 gap-8 lg:gap-32 pt-24 pb-12">
+                    <SectionBlock id="tory" title="Odnajdź swoje tory. Znów.">
+                        <SectionProse>
+                            <About />
+                        </SectionProse>
+                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
+                    </SectionBlock>
+                    <SectionBlock id="informacje" title="Podstawowe informacje">
+                        <SectionProse>
+                            <Information />
+                        </SectionProse>
+                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
+                    </SectionBlock>
+                    <SectionBlock id="faq" title="FAQ">
+                        <SectionProse>
+                            <FAQ />
+                        </SectionProse>
+                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
+                    </SectionBlock>
+                </div>
+            </Container>
+        </section>
+        <Footer />
     </main>
 </Layout>

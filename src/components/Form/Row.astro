@@ -1,0 +1,18 @@
+---
+interface Props {
+    id?: string;
+    hidden?: boolean;
+}
+
+const {
+    id,
+    hidden = false,
+} = Astro.props;
+
+---
+<div id={id} class:list={[
+    'pb-4 text-lg',
+    {'hidden': hidden}
+]}>
+    <slot/>
+</div>

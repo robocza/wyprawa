@@ -1,0 +1,28 @@
+---
+interface Props {
+    label: string;
+    type: string;
+    name: string;
+    required?: boolean;
+    attributes?: {
+        [key: string]: string | number;
+    };
+}
+
+const {
+    label,
+    type,
+    name,
+    required = true,
+    attributes = [],
+} = Astro.props;
+
+const InputElement = type !== 'textarea' ? 'input' : 'textarea';
+
+---
+<label class="mb-4 block max-w-sm">{label}{required && <Fragment> <sup>★</sup></Fragment>}<InputElement class:list={[
+    'mt-2 border-3 border-canary rounded py-1 px-2 block text-nut-dark bg-white',
+    {'min-w-[340px]': type === 'input'},
+    {'min-w-[420px]': type === 'textarea'},
+    {'min-w-[50px]': type === 'number'},
+]} type={type} name={name} {...(required ? { required: true } : {})} {...attributes}/></label>

@@ -1,0 +1,17 @@
+---
+import Button from './Button.astro';
+
+interface Props {
+    url: string;
+    text: string;
+}
+
+const {
+    url,
+    text
+} = Astro.props;
+
+---
+<div class="mt-8 2xl:mt-16">
+    <Button text={text} url={url} extraClassName="text-canary hover:bg-canary hover:text-nut border-canary"/>
+</div>

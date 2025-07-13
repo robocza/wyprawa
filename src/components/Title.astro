@@ -1,0 +1,17 @@
+---
+import {Image} from "astro:assets";
+import BoyImage from '../assets/boy.png';
+import TitleImage from '../assets/title.png';
+---
+<div class="py-4 2xl:py-8 flex">
+    <Image src={TitleImage}
+           alt="Wyprawa Robocza #7 — Znów"
+           class="max-h-80 w-auto px-4 xl:px-0"
+           loading="eager"
+    />
+    <Image src={BoyImage}
+           alt="Zadowolony chłopiec bawi się ciuchcią"
+           class="max-h-80 w-auto px-4 xl:px-0"
+           loading="eager"
+    />
+</div>

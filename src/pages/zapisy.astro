@@ -1,0 +1,66 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Central from '@layouts/elements/arrangement/Central.astro';
+import Footer from '../components/Footer.astro';
+import Title from "../components/Title.astro";
+import Button from '../components/Button.astro';
+import Header from '../components/Header.astro';
+import Container from '../layouts/elements/Container.astro';
+import Form from '../components/Form.astro';
+import SectionBlock from '../components/SectionBlock.astro';
+import Link from '../components/Link.astro';
+import Jumbotron from '../components/Jumbotron.astro';
+---
+
+<style>
+    ol {
+        list-style-type: circled-decimal;
+    }
+    li::marker {
+        color: var(--color-lilac);
+        font-size: 40px;
+        font-weight: bold;
+    }
+</style>
+
+<Layout title="Wyprawa Robocza #7 - Znów">
+    <Header />
+    <main class="font-body">
+        <Jumbotron>
+            <div class="w-full">
+                <h1 class="text-5xl sm:text-8xl lg:text-10xl 2xl:text-16xl uppercase font-serif">Zapisy na wyprawę</h1>
+                <p class="text-2xl">Jak to działa?</p>
+
+                <div class="flex h-full items-center justify-center">
+                    <div class="mx-auto w-auto text-center">
+                        <ol class="list-inside text-3xl">
+                            <li>
+                                Wyraź chęć udziału w Wyprawie  i zapisz się przez → <Link text="ten formularz" url="#formularz" className="underline text-nut bg-canary-dark hover:text-canary-dark hover:bg-nut"/>
+                            </li>
+                            <li>
+                                Po zakończeniu zapisów otrzymasz link do płatności.
+                            </li>
+                            <li>
+                                Płacąc, potwierdzisz swój udział w Wyprawie.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </Jumbotron>
+        <section id="zapisy" class="scroll-mt-[80px] bg-nut-dark text-canary">
+            <Container>
+                <div class="w-full grid grid-cols-3 gap-8 lg:gap-32 pt-24 pb-12">
+                    <SectionBlock id="formularz">
+                        <Fragment slot="title">
+                            <div>Formularz rejestracyjny</div>
+                            <Link text="Podstawowe informacje" url="/#informacje" className="underline text-canary hover:text-nut hover:bg-canary text-base"/>
+                        </Fragment>
+                        <Form />
+                    </SectionBlock>
+                </div>
+            </Container>
+        </section>
+        <Footer />
+    </main>
+</Layout>

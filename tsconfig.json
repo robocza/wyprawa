@@ -1,24 +1,18 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "strictNullChecks": true,
-    "baseUrl": "src",
-    "paths": {
-      "@components/*": [
-        "components/*"
-      ],
-      "@layouts/*": [
-        "layouts/*"
-      ],
-      "@assets/*": [
-        "assets/*"
-      ],
-      "@pages/*": [
-        "pages/*"
-      ]
+    "extends": "astro/tsconfigs/strict",
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "strictNullChecks": true,
+        "baseUrl": "src",
+        "paths": {
+            "@assets/*": ["assets/*"],
+            "@components/*": ["components/*"],
+            "@layouts/*": ["layouts/*"],
+            "@pages/*": ["pages/*"],
+            "@styles/*": ["styles/*"]
+        },
+        "jsx": "preserve"
     },
-    "jsx": "preserve"
-  }
+    "exclude": ["public/archiwum"]
 }

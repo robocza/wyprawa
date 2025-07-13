@@ -5,6 +5,6 @@ Całość zaprojektowana przez Dawida Prządę (logo & koncepcja) oraz Maję Sta
 
 Plakat będzie zapakowany w tubę chroniącą przed wygryzieniami obcych zwierząt.
 
--   **Wymiary**: B2 (50x70 cm)
--   **Papier**: matowy premium 200g / druk lateksowy
--   **Cena**: 60 zł
+- **Wymiary**: B2 (50x70 cm)
+- **Papier**: matowy premium 200g / druk lateksowy
+- **Cena**: 60 zł

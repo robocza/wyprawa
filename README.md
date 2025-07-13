@@ -14,17 +14,23 @@ docker exec -it --user 1000:1000 wyprawa-robocza-node fish
 Install dependencies
 
 ```bash
-yarn install
+npm run install
 ```
 
 Run project (inside docker)
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Test locally Netlify functions (using Netlify CLI)
 
 ```bash
-netlify dev -c "yarn dev" --targetPort 3001
+netlify dev -c "npm run dev" --targetPort 3001
+```
+
+Build your production site to `./dist/`
+
+```bash
+npm run build
 ```

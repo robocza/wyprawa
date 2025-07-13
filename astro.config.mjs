@@ -1,19 +1,15 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 // import netlify from '@astrojs/netlify/functions';
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
     // output: 'server',
     // adapter: netlify(),
     server: {
-        host: true,
-        port: 3000
+        allowedHosts: true,
     },
-    site: "https://wyprawa.robocza.org",
-    integrations: [
-        tailwind(),
-    ],
+    site: 'https://wyprawa.robocza.org',
     redirects: {
         '/polityka-prywatnosci': '/polityka-prywatnosci.pdf',
         '/regulamin': '/regulamin.pdf',
@@ -22,10 +18,11 @@ export default defineConfig({
         '/kup-plakat-z-robalem': 'https://buy.stripe.com/5kA8y10ee96igP6bIN',
     },
     vite: {
+        plugins: [tailwindcss()],
         server: {
             watch: {
-                ignored: ['**/.idea/workspace.xml', '.idea/workspace.xml.tmp']
-            }
-        }
-    }
+                ignored: ['**/.idea/workspace.xml', '**/.idea/workspace.xml.tmp'],
+            },
+        },
+    },
 });

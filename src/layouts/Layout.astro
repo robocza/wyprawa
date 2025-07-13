@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 export interface Props {
     title: string;
 }
@@ -6,7 +8,7 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
@@ -15,7 +17,8 @@ const { title } = Astro.props;
         <title>{title}</title>
         <style is:global>
             .pantopian-gradient {
-                background: url('/assets/gradient-noise.svg'),
+                background:
+                    url('/assets/gradient-noise.svg'),
                     radial-gradient(
                         circle at center top,
                         rgb(255, 255, 255) 0%,

@@ -1,8 +1,28 @@
 ---
 import Container from '../layouts/elements/Container.astro';
+import Central from '../layouts/elements/arrangement/Central.astro';
+import NextSectionArrow from './NextSectionArrow.astro';
+
+interface Props {
+    nextSectionUrl?: string;
+}
+
+const {
+    nextSectionUrl
+} = Astro.props;
+
 ---
-<section class="pt-16 2xl:pt-0 flex h-full items-center justify-center min-h-screen text-nut bg-canary-dark">
+<section class="flex h-full items-center justify-center min-h-screen text-nut bg-canary-dark relative pt-48 pb-32">
     <Container>
         <slot/>
     </Container>
+    {nextSectionUrl &&
+        <div class="text-center lg:absolute lg:right-0 lg:bottom-0 lg:left-0">
+            <Central>
+                <div class="my-10 block">
+                    <NextSectionArrow nextSectionUrl={nextSectionUrl}/>
+                </div>
+            </Central>
+        </div>
+    }
 </section>

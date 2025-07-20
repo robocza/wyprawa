@@ -2,7 +2,6 @@
 import Layout from '@layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Jumbotron from '../components/Jumbotron.astro';
-import JumbotronLink from '../components/JumbotronLink.astro';
 
 import {Image} from "astro:assets";
 import BoyImage from '../assets/boy.png';
@@ -12,21 +11,12 @@ import JumbotronFooter from '../components/JumbotronFooter.astro';
     <Header />
     <main class="font-body">
         <Jumbotron>
-            <div class="w-full flex justify-between items-end gap-32 pb-16">
+            <div class="w-full flex justify-between items-start gap-32 pb-16">
                 <div class="text-left">
-                    <h1 class="text-5xl font-bold uppercase mb-32">Dziękujemy!</h1>
+                    <h1 class="text-5xl font-bold uppercase mb-32">Manifest</h1>
                     <div class="flex h-full items-center">
                         <div class="w-auto text-left text-3xl">
-                            <p class="mb-8">Super, cieszymy się,  że chcesz jechać z nami! Na początku sierpnia damy Ci znać o kolejnych krokach.</p>
-                            <p class="mb-8">Tymczasem możesz powspominać poprzednie Wyprawy:</p>
-                            <ul>
-                                <li class="mb-8">
-                                    <JumbotronLink text="→ Archiwum Wypraw" url="/archiwum"/>
-                                </li>
-                                <li class="mb-8">
-                                    <JumbotronLink text="→ instagram/grupa.robocza" url="https://www.instagram.com/grupa.robocza/"/>
-                                </li>
-                            </ul>
+                            <p>Tu będzie manifest, ale jeszcze nie ma.</p>
                         </div>
                     </div>
                 </div>

@@ -18,37 +18,36 @@ import Jumbotron from '../components/Jumbotron.astro';
 <Layout title="Wyprawa Robocza #7 — Znów">
     <Header />
     <main class="font-body">
-        <Jumbotron>
-            <div class="w-full">
-                <p class="text-left">12.09.2025 - 14.09.2025</p>
-                <h1 class="text-5xl sm:text-8xl lg:text-10xl 2xl:text-16xl uppercase font-serif"><Title/></h1>
+        <Jumbotron nextSectionUrl="#o-wyprawie">
+            <div class="w-full pb-16">
+                <h1 class="text-5xl uppercase"><Title/></h1>
                 <Central>
                     <div class="mt-4 2xl:mt-8">
-                        <Button text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
+                        <Button text='Zapisz się na wyprawę' url="/zapisy"/>
                     </div>
                 </Central>
             </div>
         </Jumbotron>
-        <section id="o-wyprawie" class="scroll-mt-[80px] bg-nut-dark text-canary">
+        <section id="o-wyprawie" class="scroll-mt-20 bg-nut-dark text-canary">
             <Container>
                 <div class="w-full grid grid-cols-3 gap-8 lg:gap-32 pt-24 pb-12">
                     <SectionBlock id="tory" title="Odnajdź swoje tory. Znów.">
                         <SectionProse>
                             <About />
                         </SectionProse>
-                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
+                        <SectionCallToAction text='Przeczytaj manifest' url="/manifest"/>
                     </SectionBlock>
                     <SectionBlock id="informacje" title="Podstawowe informacje">
                         <SectionProse>
                             <Information />
                         </SectionProse>
-                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
+                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
                     </SectionBlock>
                     <SectionBlock id="faq" title="FAQ">
                         <SectionProse>
                             <FAQ />
                         </SectionProse>
-                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy#formularz"/>
+                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
                     </SectionBlock>
                 </div>
             </Container>

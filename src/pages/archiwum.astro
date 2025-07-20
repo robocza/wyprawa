@@ -1,0 +1,42 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Jumbotron from '../components/Jumbotron.astro';
+import JumbotronLink from '../components/JumbotronLink.astro';
+
+import {Image} from "astro:assets";
+import ChildhoodImage from '../assets/childhood.png';
+import JumbotronFooter from '../components/JumbotronFooter.astro';
+---
+<Layout title="Dziękujemy | Wyprawa Robocza #7 - Znów">
+    <Header />
+    <main class="font-body">
+        <Jumbotron>
+            <div class="w-full grid grid-cols-2 gap-32 pb-16">
+                <div class="text-left">
+                    <h1 class="text-5xl font-bold uppercase mb-8">Archiwum Wypraw</h1>
+
+                    <div class="flex h-full items-center">
+                        <ul class="w-auto text-left text-3xl">
+                            <li>
+                                <JumbotronLink text="→ Wyprawa 2020 – Poręba" url="https://mvu.pl/wyprawa/"/>
+                            </li>
+                            <li>
+                                <JumbotronLink text="→ Wyprawa 2021 – Jaworzno" url="https://eden.mvu.pl/"/>
+                            </li>
+                            <li>
+                                <JumbotronLink text="→ Wyprawa 2023 – Jaworzno" url="https://wyprawa.robocza.org/archiwum/wyprawa/6"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <Image src={ChildhoodImage}
+                       alt="Dziecko zanurza się w marzeniach pełnych gwiazd"
+                       class="justify-self-end max-w-[500px] w-full h-auto px-4 xl:px-0"
+                       loading="eager"
+                />
+            </div>
+            <JumbotronFooter/>
+        </Jumbotron>
+    </main>
+</Layout>

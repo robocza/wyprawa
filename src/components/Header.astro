@@ -1,22 +1,15 @@
 ---
 import LogoMVU from "../components/assets/LogoMVU.astro";
 import LogoPoweredByGrupaRobocza from "../components/assets/PoweredByGrupaRobocza.astro";
-import MenuLink from "./MenuLink.astro";
 import Container from '../layouts/elements/Container.astro';
+import Menu from './Menu.astro';
 ---
 <header class="lg:transition-transform duration-300 ease-in-out top-0 z-50 flex-none mx-auto w-full fixed">
     <div class="absolute inset-0 bg-canary-dark"></div>
     <Container>
         <div class="relative w-full mx-auto">
             <div class="grid grid-flow-col auto-cols-fr justify-between lg:grid-cols-2 h-16 lg:h-20">
-                <nav class="flex items-center justify-start gap-x-8">
-                    <MenuLink text="O wyprawie" url="/" />
-                    <MenuLink text="Manifest" url="/manifest" />
-                    <MenuLink text="Archiwum wypraw" url="/archiwum" />
-                    <MenuLink text="O nas" url="https://grupa.robocza.org" />
-                    <MenuLink text="Zapisz się" url="/zapisy" />
-                </nav>
-
+                <Menu/>
                 <div class="flex items-center justify-end sm:gap-x-2 lg:gap-x-8">
                     <a class="hidden lg:flex items-center" title="Minimum Viable Utopia" target="_blank" href="https://mvu.pl/">
                         <LogoMVU />

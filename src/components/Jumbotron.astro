@@ -4,15 +4,19 @@ import Central from '../layouts/elements/arrangement/Central.astro';
 import NextSectionArrow from './NextSectionArrow.astro';
 
 interface Props {
+    fullScreen?: boolean;
     nextSectionUrl?: string;
 }
 
 const {
-    nextSectionUrl
+    fullScreen = false,
+    nextSectionUrl,
 } = Astro.props;
-
 ---
-<section class="flex h-full items-center justify-center min-h-screen text-nut bg-canary-dark relative pt-48 pb-32">
+<section class="" class:list={[
+    'flex h-full items-center justify-center text-nut bg-canary-dark relative pt-48 pb-32',
+    {'min-h-screen': fullScreen},
+]}>
     <Container>
         <slot/>
     </Container>

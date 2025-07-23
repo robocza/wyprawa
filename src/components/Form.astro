@@ -1,6 +1,7 @@
 ---
 import Row from './Form/Row.astro';
 import FormInput from './Form/Input.astro';
+import FormLabel from './Form/Label.astro';
 ---
 <form id="formularz" name="registration" method="POST" data-netlify="true">
     <Row>
@@ -13,21 +14,21 @@ import FormInput from './Form/Input.astro';
         <FormInput label="Nazwisko" type="text" name="surname" attributes={{maxlength: 100}}/>
     </Row>
     <Row>
-        <FormInput label="Który raz będziesz na wyprawie?" type="number" name="expedition_count" attributes={{min: 1, max: 7}}/>
+        <FormInput label="Który raz będziesz na Wyprawie Roboczej?" type="number" name="expedition_count" attributes={{min: 1, max: 7}}/>
     </Row>
     <Row>
         <FormInput label="Co robisz? Co lubisz? Czym się zajmujesz?" type="textarea" name="about" attributes={{rows: 3, maxlength: 5000}}/>
     </Row>
     <Row>
         <fieldset>
-            <label class="block">Czy chcesz poprowadzić jakąś aktywność na Wyprawie? <sup>★</sup></label>
+            <FormLabel required={true} text="Czy chcesz poprowadzić na Wyprawie warsztat, wykład lub coś zupełnie innego?"/>
 
-            <div class="text-lilac text-center min-w-xs border-1 border-canary rounded-full inline-block my-2 py-2 px-24">
+            <div class="text-lilac text-center min-w-xs border-1 border-lilac rounded-full inline-block py-2 px-24">
                 <div class="font-decorative text-6xl">-20% dla osób,</div>
                 <div class="text-base">które poprowadzą wykład lub warsztat</div>
             </div>
 
-            <span class="block">
+            <span class="block mt-4">
                 <label class="inline-block mr-4"><input class="mr-2" id="activity_value_yes" name="activity" value="1" type="radio" required/>Tak, chętnie!</label>
                 <label class="inline-block mr-4"><input class="mr-2" name="activity" value="0" type="radio" required/>Nie, wolę słuchać</label>
             </span>
@@ -37,7 +38,7 @@ import FormInput from './Form/Input.astro';
         <FormInput label="Super! Krótko opisz swoją propozycję. Daj znać jakich warunków i ile czasu potrzebujesz do jej realizacji." type="textarea" name="activity_description" required={false} attributes={{rows: 3, maxlength: 5000}}/>
     </Row>
     <div class="mt-4">
-        <button class="uppercase cursor-pointer font-body text-sm sm:text-base lg:text-lg font-bold text-nut bg-canary-dark hover:bg-nut-dark hover:text-canary-dark py-3 px-8 rounded-full border-3 border-canary-dark" type="submit">Wyślij formularz</button>
+        <button class="uppercase cursor-pointer font-body text-sm sm:text-base lg:text-lg font-bold text-nut bg-canary-dark hover:bg-nut-dark hover:text-canary-dark py-3 px-10 rounded-full border-3 border-canary-dark" type="submit">Wyślij formularz</button>
     </div>
 </form>
 

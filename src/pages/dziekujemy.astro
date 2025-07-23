@@ -7,6 +7,7 @@ import JumbotronLink from '../components/JumbotronLink.astro';
 import {Image} from "astro:assets";
 import BoyImage from '../assets/boy.png';
 import JumbotronFooter from '../components/JumbotronFooter.astro';
+import JumbotronHeading from '../components/JumbotronHeading.astro';
 ---
 <Layout title="Dziękujemy | Wyprawa Robocza #7 - Znów">
     <Header />
@@ -14,7 +15,7 @@ import JumbotronFooter from '../components/JumbotronFooter.astro';
         <Jumbotron>
             <div class="w-full flex justify-between items-end gap-32 pb-16">
                 <div class="text-left">
-                    <h1 class="text-5xl font-bold uppercase mb-32">Dziękujemy!</h1>
+                    <JumbotronHeading title="Dziękujemy!"/>
                     <div class="flex h-full items-center">
                         <div class="w-auto text-left text-3xl">
                             <p class="mb-8">Super, cieszymy się,  że chcesz jechać z nami! Na początku sierpnia damy Ci znać o kolejnych krokach.</p>

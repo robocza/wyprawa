@@ -1,0 +1,15 @@
+---
+interface Props {
+    text: string;
+    required: boolean;
+}
+
+const {
+    text,
+    required,
+} = Astro.props;
+
+---
+<label class="mb-4 block"><span class="inline-block max-w-md">{text}{required && <Fragment> <sup>★</sup></Fragment>}</span>
+    <slot/>
+</label>

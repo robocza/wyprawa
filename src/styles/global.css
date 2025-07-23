@@ -31,9 +31,12 @@
     --breakpoint-xs: 480px;
     --color-nut: #4C4035;
     --color-lilac: #758AF3;
+    --color-lilac-dark: #5C71D9;
     --color-canary: #F5F3D1;
     --color-nut-dark: #403A34;
     --color-canary-dark: #F2EEB1;
     --font-body: 'MonumentGrotesk', var(--font-sans);
     --font-decorative: 'EdwardianScriptITC', var(--font-serif);
+    --text-jumbo: 5rem;
+    --text-jumbo--line-height: 5rem;
 }

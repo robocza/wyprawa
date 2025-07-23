@@ -1,0 +1,14 @@
+---
+import MenuLink from "./MenuLink.astro";
+---
+<nav class="flex flex-col lg:flex-row items-center justify-start lg:gap-x-8 gap-y-8">
+    <MenuLink text="O wyprawie" url="/" />
+    <MenuLink text="Manifest" url="/manifest" />
+    <MenuLink url="/archiwum">
+        <Fragment slot="text">
+            Archiwum<span class="hidden lg:inline"> wypraw</span>
+        </Fragment>
+    </MenuLink>
+    <MenuLink text="O nas" url="https://grupa.robocza.org" />
+    <MenuLink text="Zapisz się" url="/zapisy" extraClassName="py-3 px-6 lg:py-2 lg:px-4 rounded-full border-3 lg:border-2 lg:border-nut border-canary-dark lg:border-nut font-body uppercase text-4xl lg:text-base text-bold" />
+</nav>

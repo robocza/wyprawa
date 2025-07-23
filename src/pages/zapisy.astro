@@ -12,31 +12,20 @@ import {Image} from "astro:assets";
 import MoebiusImage from '../assets/moebius.png';
 import JumbotronLink from '../components/JumbotronLink.astro';
 import JumbotronHeading from '../components/JumbotronHeading.astro';
+import Section from '@components/Section.astro';
 ---
-
-<style>
-    ol {
-        list-style-type: circled-decimal;
-    }
-    li::marker {
-        color: var(--color-lilac);
-        font-size: 40px;
-        font-weight: bold;
-    }
-</style>
-
 <Layout title="Zapisy | Wyprawa Robocza #7 - Znów">
     <Header />
     <main class="font-body">
         <Jumbotron>
-            <div class="w-full flex justify-between items-end gap-32 pb-16">
+            <div class="w-full lg:flex lg:justify-between lg:items-end gap-32 pb-16">
                 <div class="text-left">
                     <JumbotronHeading title="Zapisy na wyprawę"/>
-                    <p class="text-3xl mb-12">Jak to działa?</p>
+                    <p class="text-2xl lg:text-3xl mb-12">Jak to działa?</p>
 
-                    <div class="flex h-full items-center">
+                    <div class="flex h-full items-center mb-16 lg:mb-0">
                         <div class="w-auto text-left">
-                            <ol class="list-outside ml-14 text-3xl">
+                            <ol class="list-[circled-decimal] marker:text-5xl marker:font-bold marker:text-lilac list-outside ml-16 text-2xl lg:text-3xl">
                                 <li class="mb-8">
                                     Wyraź chęć udziału w Wyprawie  i zapisz się przez → <JumbotronLink text="ten formularz" url="#formularz"/>
                                 </li>
@@ -52,24 +41,20 @@ import JumbotronHeading from '../components/JumbotronHeading.astro';
                 </div>
                 <Image src={MoebiusImage}
                        alt="Wstęga Möbiusa"
-                       class="max-h-80 w-auto px-4 xl:px-0"
+                       class="max-w-1/2 mx-auto lg:max-w-none lg:max-h-80 lg:w-auto lg:px-4 xl:px-0"
                        loading="eager"
                 />
             </div>
         </Jumbotron>
-        <section id="formularz" class="scroll-mt-20 bg-nut-dark text-canary">
-            <Container>
-                <div class="w-full grid grid-cols-3 gap-8 lg:gap-32 pt-24 pb-12">
-                    <SectionBlock>
-                        <Fragment slot="title">
-                            <div>Formularz rejestracyjny</div>
-                            <Link text="→ Podstawowe informacje" url="/#informacje" className="text-lg underline text-canary hover:text-nut hover:bg-canary text-base"/>
-                        </Fragment>
-                        <Form />
-                    </SectionBlock>
-                </div>
-            </Container>
-        </section>
+        <Section id="formularz">
+            <SectionBlock>
+                <Fragment slot="title">
+                    <div>Formularz rejestracyjny</div>
+                    <Link text="→ Podstawowe informacje" url="/#informacje" className="text-lg underline text-canary hover:text-nut hover:bg-canary text-base"/>
+                </Fragment>
+                <Form />
+            </SectionBlock>
+        </Section>
         <Footer />
     </main>
 </Layout>

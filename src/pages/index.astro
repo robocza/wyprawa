@@ -14,6 +14,7 @@ import SectionBlock from '../components/SectionBlock.astro';
 import SectionCallToAction from '../components/SectionCallToAction.astro';
 import Jumbotron from '../components/Jumbotron.astro';
 import JumbotronHeading from '../components/JumbotronHeading.astro';
+import Section from '@components/Section.astro';
 ---
 
 <Layout title="Wyprawa Robocza #7 — Znów">
@@ -33,30 +34,26 @@ import JumbotronHeading from '../components/JumbotronHeading.astro';
                 </Central>
             </div>
         </Jumbotron>
-        <section id="o-wyprawie" class="scroll-mt-20 bg-nut-dark text-canary">
-            <Container>
-                <div class="w-full grid grid-cols-3 gap-8 lg:gap-32 pt-24 pb-12">
-                    <SectionBlock id="tory" title="Odnajdź swoje tory. Znów.">
-                        <SectionProse>
-                            <About />
-                        </SectionProse>
-                        <SectionCallToAction text='Przeczytaj manifest' url="/manifest"/>
-                    </SectionBlock>
-                    <SectionBlock id="informacje" title="Podstawowe informacje">
-                        <SectionProse>
-                            <Information />
-                        </SectionProse>
-                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
-                    </SectionBlock>
-                    <SectionBlock id="faq" title="FAQ">
-                        <SectionProse>
-                            <FAQ />
-                        </SectionProse>
-                        <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
-                    </SectionBlock>
-                </div>
-            </Container>
-        </section>
+        <Section id="o-wyprawie">
+            <SectionBlock id="tory" title="Odnajdź swoje tory. Znów.">
+                <SectionProse>
+                    <About />
+                </SectionProse>
+                <SectionCallToAction text='Przeczytaj manifest' url="/manifest"/>
+            </SectionBlock>
+            <SectionBlock id="informacje" title="Podstawowe informacje">
+                <SectionProse>
+                    <Information />
+                </SectionProse>
+                <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
+            </SectionBlock>
+            <SectionBlock id="faq" title="FAQ">
+                <SectionProse>
+                    <FAQ />
+                </SectionProse>
+                <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
+            </SectionBlock>
+        </Section>
         <Footer />
     </main>
 </Layout>

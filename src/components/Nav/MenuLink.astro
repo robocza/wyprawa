@@ -9,8 +9,8 @@ interface Props {
 const {
     url,
     text = await Astro.slots.render('text'),
-    className = "uppercase font-body text-sm lg:text-base font-bold text-nut hover:underline",
-    extraClassName = '',
+    className = "text-canary-dark lg:uppercase lg:text-base lg:font-bold lg:text-nut hover:underline",
+    extraClassName = 'font-decorative lg:font-body text-jumbo lg:text-base',
 } = Astro.props;
 
 ---

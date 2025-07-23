@@ -1,0 +1,14 @@
+---
+import Container from '../layouts/elements/Container.astro';
+
+const {
+    id,
+} = Astro.props;
+---
+<section id={id} class="scroll-mt-8 lg:scroll-mt-20 bg-nut-dark text-canary">
+    <Container>
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-32 pt-12 lg:pt-24 pb-12">
+            <slot/>
+        </div>
+    </Container>
+</section>

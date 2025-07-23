@@ -1,11 +1,18 @@
 ---
 import {Image} from "astro:assets";
 import TitleImage from '../assets/title.png';
+import TitleMiniImage from '../assets/title-mini.png';
 ---
-<div class="py-4 2xl:py-8 flex">
+<div class="py-4 2xl:py-8 lg:flex">
     <Image src={TitleImage}
            alt="Wyprawa Robocza #7 — Znów; zadowolony chłopiec bawi się ciuchcią"
-           class="w-full"
+           class="hidden lg:block w-full"
+           loading="eager"
+    />
+
+    <Image src={TitleMiniImage}
+           alt="Wyprawa Robocza #7 — Znów; zadowolony chłopiec bawi się ciuchcią"
+           class="lg:hidden w-full"
            loading="eager"
     />
 </div>

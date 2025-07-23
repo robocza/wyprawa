@@ -14,14 +14,14 @@ const {
 } = Astro.props;
 ---
 <section class="" class:list={[
-    'flex h-full items-center justify-center text-nut bg-canary-dark relative pt-48 pb-32',
-    {'min-h-screen': fullScreen},
+    'lg:flex lg:h-full items-center justify-center text-nut bg-canary-dark relative pt-20 pb-6 lg:pt-48 lg:pb-32',
+    {'lg:min-h-screen': fullScreen},
 ]}>
     <Container>
         <slot/>
     </Container>
     {nextSectionUrl &&
-        <div class="text-center lg:absolute lg:right-0 lg:bottom-0 lg:left-0">
+        <div class="hidden lg:block text-center lg:absolute lg:right-0 lg:bottom-0 lg:left-0">
             <Central>
                 <div class="my-10 block">
                     <NextSectionArrow nextSectionUrl={nextSectionUrl}/>

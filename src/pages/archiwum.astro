@@ -8,16 +8,17 @@ import {Image} from "astro:assets";
 import ChildhoodImage from '../assets/childhood.png';
 import JumbotronFooter from '../components/JumbotronFooter.astro';
 import JumbotronHeading from '../components/JumbotronHeading.astro';
+import JumbotronSection from '../components/JumbotronSection.astro';
 ---
 <Layout title="Dziękujemy | Wyprawa Robocza #7 - Znów">
     <Header />
     <main class="font-body">
         <Jumbotron>
-            <div class="w-full grid grid-cols-2 gap-32 pb-16">
+            <JumbotronSection>
                 <div class="text-left">
                     <JumbotronHeading title="Archiwum Wypraw"/>
                     <div class="flex h-full items-center">
-                        <ul class="w-auto text-left text-3xl">
+                        <ul class="w-auto text-left text-2xl lg:text-3xl">
                             <li>
                                 <JumbotronLink text="→ Wyprawa 2020 – Poręba" url="https://mvu.pl/wyprawa/"/>
                             </li>
@@ -35,7 +36,7 @@ import JumbotronHeading from '../components/JumbotronHeading.astro';
                        class="justify-self-end max-w-[500px] w-full h-auto px-4 xl:px-0"
                        loading="eager"
                 />
-            </div>
+            </JumbotronSection>
             <JumbotronFooter/>
         </Jumbotron>
     </main>

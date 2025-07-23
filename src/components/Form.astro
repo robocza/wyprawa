@@ -3,7 +3,7 @@ import Row from './Form/Row.astro';
 import FormInput from './Form/Input.astro';
 import FormLabel from './Form/Label.astro';
 ---
-<form id="formularz" name="registration" method="POST" data-netlify="true">
+<form name="registration" method="POST" data-netlify="true">
     <Row>
         <FormInput label="Adres e-mail" type="email" name="email"/>
     </Row>
@@ -37,7 +37,7 @@ import FormLabel from './Form/Label.astro';
     <Row id="activity_description" hidden={true}>
         <FormInput label="Super! Krótko opisz swoją propozycję. Daj znać jakich warunków i ile czasu potrzebujesz do jej realizacji." type="textarea" name="activity_description" required={false} attributes={{rows: 3, maxlength: 5000}}/>
     </Row>
-    <div class="mt-4">
+    <div class="mt-4 text-center lg:text-left">
         <button class="uppercase cursor-pointer font-body text-sm sm:text-base lg:text-lg font-bold text-nut bg-canary-dark hover:bg-nut-dark hover:text-canary-dark py-3 px-10 rounded-full border-3 border-canary-dark" type="submit">Wyślij formularz</button>
     </div>
 </form>

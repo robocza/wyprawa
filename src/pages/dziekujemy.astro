@@ -13,18 +13,18 @@ import JumbotronHeading from '../components/JumbotronHeading.astro';
     <Header />
     <main class="font-body">
         <Jumbotron>
-            <div class="w-full flex justify-between items-end gap-32 pb-16">
+            <div class="w-full grid grid-cols-1 lg:flex lg:justify-between items-end gap-32 pb-16">
                 <div class="text-left">
                     <JumbotronHeading title="Dziękujemy!"/>
                     <div class="flex h-full items-center">
-                        <div class="w-auto text-left text-3xl">
-                            <p class="mb-8">Super, cieszymy się,  że chcesz jechać z nami! Na początku sierpnia damy Ci znać o kolejnych krokach.</p>
-                            <p class="mb-8">Tymczasem możesz powspominać poprzednie Wyprawy:</p>
+                        <div class="w-auto text-left text-xl lg:text-3xl">
+                            <p class="mb-4 lg:mb-8">Super, cieszymy się,  że chcesz jechać z nami! Na początku sierpnia damy Ci znać o kolejnych krokach.</p>
+                            <p class="mb-4 lg:mb-8">Tymczasem możesz powspominać poprzednie Wyprawy:</p>
                             <ul>
-                                <li class="mb-8">
+                                <li class="mb-4 lg:mb-8">
                                     <JumbotronLink text="→ Archiwum Wypraw" url="/archiwum"/>
                                 </li>
-                                <li class="mb-8">
+                                <li class="mb-4 lg:mb-8">
                                     <JumbotronLink text="→ instagram/grupa.robocza" url="https://www.instagram.com/grupa.robocza/"/>
                                 </li>
                             </ul>
@@ -33,7 +33,7 @@ import JumbotronHeading from '../components/JumbotronHeading.astro';
                 </div>
                 <Image src={BoyImage}
                        alt="Szczęśliwy chłopiec bawi się ciuchcią"
-                       class="w-full h-auto px-4 xl:px-0"
+                       class="justify-self-end max-w-[500px] w-full h-auto lg:px-4 xl:px-0"
                        loading="eager"
                 />
             </div>

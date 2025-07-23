@@ -7,22 +7,23 @@ import ChildhoodImage from '../assets/childhood.png';
 import JumbotronFooter from '../components/JumbotronFooter.astro';
 import JumbotronHeading from '../components/JumbotronHeading.astro';
 import Manifesto from '@components/manifesto/Content.md';
+import JumbotronSection from '../components/JumbotronSection.astro';
 
 ---
 <Layout title="Manifest | Wyprawa Robocza #7 - Znów">
     <Header />
     <main class="font-body">
         <Jumbotron>
-            <div class="w-full grid grid-cols-2 gap-32 pb-16">
+            <JumbotronSection>
                 <div class="text-left">
                     <JumbotronHeading>
                         <Fragment slot="title">
                             Manifest
-                            <div class="text-3xl">Wyprawa Robocza #7</div>
+                            <div class="text-2xl lg:text-3xl">Wyprawa Robocza #7</div>
                         </Fragment>
                     </JumbotronHeading>
 
-                    <div class="marker:text-nut-dark prose prose-p:leading-tight prose-2xl prose-p:text-nut-dark prose-p:font-body prose-ul:text-nut-dark prose-li:text-nut-dark prose-li:leading-tight prose-a:text-nut-dark prose-a:underline prose-a:hover:nut-dark prose-a:hover:text-canary">
+                    <div class="marker:text-nut-dark prose prose-p:leading-tight prose-base lg:prose-2xl prose-p:text-nut-dark prose-p:font-body prose-ul:text-nut-dark prose-li:text-nut-dark prose-li:leading-tight prose-a:text-nut-dark prose-a:underline prose-a:hover:nut-dark prose-a:hover:text-canary">
                         <Manifesto />
                     </div>
                 </div>
@@ -31,7 +32,7 @@ import Manifesto from '@components/manifesto/Content.md';
                        class="justify-self-end max-w-[500px] w-full h-auto px-4 xl:px-0"
                        loading="eager"
                 />
-            </div>
+            </JumbotronSection>
             <JumbotronFooter/>
         </Jumbotron>
     </main>

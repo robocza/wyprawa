@@ -2,6 +2,8 @@
 import Row from './Form/Row.astro';
 import FormInput from './Form/Input.astro';
 import FormLabel from './Form/Label.astro';
+import Promo from '../assets/promo.svg';
+import { Image } from 'astro:assets';
 ---
 
 <form name="registration" method="POST" action="/dziekujemy" data-netlify="true" netlify-honeypot="bot">
@@ -29,10 +31,7 @@ import FormLabel from './Form/Label.astro';
         <fieldset>
             <FormLabel required={true} text="Czy chcesz poprowadzić na Wyprawie warsztat, wykład lub coś zupełnie innego?" />
 
-            <div class="text-lilac border-lilac inline-block min-w-xs rounded-full border-1 px-24 py-2 text-center">
-                <div class="font-decorative text-6xl">-20% dla osób,</div>
-                <div class="text-base">które poprowadzą wykład lub warsztat</div>
-            </div>
+            <Image src={Promo} alt="-20% dla osób, które poprowadzą wykład lub warsztat" class="w-full max-w-[560px]" />
 
             <span class="mt-4 block">
                 <label class="mr-4 inline-block"
@@ -64,7 +63,7 @@ import FormLabel from './Form/Label.astro';
         const activityRadios = document.querySelectorAll('input[name="activity"]') as NodeListOf<HTMLFormElement>;
         const activityDescriptionField = document.getElementById('activity_description') as HTMLFormElement;
 
-        if(activityRadios !== null) {
+        if (activityRadios !== null) {
             activityRadios.forEach((radio) => {
                 radio.addEventListener('change', () => {
                     if (radio.value === '1' && radio.checked) {

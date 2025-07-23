@@ -11,13 +11,6 @@
     font-display: swap;
     src: url('/fonts/MonumentGrotesk-Regular.woff2') format('woff2');
 }
-@font-face {
-    font-family: EdwardianScriptITC;
-    font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-    src: url('/fonts/EdwardianScriptITC.ttf') format('truetype');
-}
 
 @counter-style circled-decimal {
     system: fixed 0;
@@ -38,7 +31,6 @@
     --color-nut-dark: #403a34;
     --color-canary-dark: #f2eeb1;
     --font-body: 'MonumentGrotesk', var(--font-sans);
-    --font-decorative: 'EdwardianScriptITC', var(--font-serif);
     --text-jumbo: 5rem;
     --text-jumbo--line-height: 5rem;
 }

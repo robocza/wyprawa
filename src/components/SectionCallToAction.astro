@@ -6,12 +6,9 @@ interface Props {
     text: string;
 }
 
-const {
-    url,
-    text
-} = Astro.props;
-
+const { url, text } = Astro.props;
 ---
-<div class="mt-16 mb-16 2xl:mt-16 lg:mb-0 text-center lg:text-left">
-    <Button text={text} url={url} extraClassName="text-canary hover:bg-canary hover:text-nut border-canary"/>
+
+<div class="mt-16 mb-16 text-center lg:mb-0 lg:text-left 2xl:mt-16">
+    <Button text={text} url={url} extraClassName="text-canary hover:bg-canary hover:text-nut border-canary" />
 </div>

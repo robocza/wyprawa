@@ -1,27 +1,27 @@
 ---
-import Menu from "./Nav/Menu.astro";
-import Modal from "./Nav/Modal.astro";
+import Menu from './Nav/Menu.astro';
+import Modal from './Nav/Modal.astro';
 ---
+
 <div class="hidden lg:block">
-    <Menu/>
+    <Menu />
 </div>
 
 <button
-        id="menu-toggle"
-        class="cursor-pointer fixed top-4 left-4 z-50 lg:hidden items-center justify-center text-nut hover:bg-nut hover:text-canary border-nut"
-        aria-label="Toggle menu"
-        data-modal-target="mobile-menu"
-        data-modal-toggle="mobile-menu"
+    id="menu-toggle"
+    class="text-nut hover:bg-nut hover:text-canary border-nut fixed top-4 left-4 z-50 cursor-pointer items-center justify-center lg:hidden"
+    aria-label="Toggle menu"
+    data-modal-target="mobile-menu"
+    data-modal-toggle="mobile-menu"
 >
-    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
+    <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
 </button>
 
 <Modal id="mobile-menu">
     <div class="mt-6">
-        <Menu/>
+        <Menu />
     </div>
 </Modal>
 

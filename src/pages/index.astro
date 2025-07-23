@@ -5,10 +5,9 @@ import About from '@components/about/Content.md';
 import FAQ from '@components/faq/Content.md';
 import Information from '@components/information/Content.md';
 import Footer from '../components/Footer.astro';
-import Title from "../components/Title.astro";
+import Title from '../components/Title.astro';
 import Button from '../components/Button.astro';
 import Header from '../components/Header.astro';
-import Container from '../layouts/elements/Container.astro';
 import SectionProse from '../components/SectionProse.astro';
 import SectionBlock from '../components/SectionBlock.astro';
 import SectionCallToAction from '../components/SectionCallToAction.astro';
@@ -24,12 +23,12 @@ import Section from '@components/Section.astro';
             <div class="w-full pb-16">
                 <JumbotronHeading>
                     <Fragment slot="title">
-                        <Title/>
+                        <Title />
                     </Fragment>
                 </JumbotronHeading>
                 <Central>
                     <div class="mt-4 2xl:mt-8">
-                        <Button text='Zapisz się na wyprawę' url="/zapisy"/>
+                        <Button text="Zapisz się na wyprawę" url="/zapisy" />
                     </div>
                 </Central>
             </div>
@@ -39,19 +38,19 @@ import Section from '@components/Section.astro';
                 <SectionProse>
                     <About />
                 </SectionProse>
-                <SectionCallToAction text='Przeczytaj manifest' url="/manifest"/>
+                <SectionCallToAction text="Przeczytaj manifest" url="/manifest" />
             </SectionBlock>
             <SectionBlock id="informacje" title="Podstawowe informacje">
                 <SectionProse>
                     <Information />
                 </SectionProse>
-                <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
+                <SectionCallToAction text="Zapisz się na wyprawę" url="/zapisy" />
             </SectionBlock>
             <SectionBlock id="faq" title="FAQ">
                 <SectionProse>
                     <FAQ />
                 </SectionProse>
-                <SectionCallToAction text='Zapisz się na wyprawę' url="/zapisy"/>
+                <SectionCallToAction text="Zapisz się na wyprawę" url="/zapisy" />
             </SectionBlock>
         </Section>
         <Footer />

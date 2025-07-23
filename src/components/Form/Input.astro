@@ -3,7 +3,7 @@ import FormLabel from './../Form/Label.astro';
 
 interface Props {
     label: string;
-    type: string;
+    type: 'textarea'|'email'|'text'|'number';
     name: string;
     required?: boolean;
     attributes?: {
@@ -11,23 +11,35 @@ interface Props {
     };
 }
 
-const {
-    label,
-    type,
-    name,
-    required = true,
-    attributes = [],
-} = Astro.props;
-
-const InputElement = type !== 'textarea' ? 'input' : 'textarea';
-
+const { label, type, name, required = true, attributes = [] } = Astro.props;
 ---
-<FormLabel required={required} text={label}>
-    <InputElement class:list={[
-        'mt-2 border-3 w-full border-canary rounded py-1 px-2 block text-nut-dark bg-white',
-        {'max-w-[400px]': type === 'text' || type === 'email'},
-        {'max-w-[560px]': type === 'textarea'},
-        {'max-w-[160px]': type === 'number'},
-    ]} type={type} name={name} {...(required ? { required: true } : {})} {...attributes}/>
-</FormLabel>
 
+<FormLabel required={required} text={label}>
+    {type === 'textarea' &&
+        <Fragment>
+            <textarea
+                class:list={[
+                    'border-canary text-nut-dark mt-2 block w-full rounded border-3 bg-white px-2 py-1 max-w-[560px]',
+                ]}
+                name={name}
+                {...required ? { required: true } : {}}
+                {...attributes}
+            />
+        </Fragment>
+    }
+    {type !== 'textarea' &&
+        <Fragment>
+            <input
+                class:list={[
+                    'border-canary text-nut-dark mt-2 block w-full rounded border-3 bg-white px-2 py-1',
+                    { 'max-w-[400px]': type === 'text' || type === 'email' },
+                    { 'max-w-[160px]': type === 'number' },
+                ]}
+                type={type}
+                name={name}
+                {...required ? { required: true } : {}}
+                {...attributes}
+            />
+        </Fragment>
+    }
+</FormLabel>

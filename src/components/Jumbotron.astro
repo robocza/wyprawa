@@ -8,25 +8,28 @@ interface Props {
     nextSectionUrl?: string;
 }
 
-const {
-    fullScreen = false,
-    nextSectionUrl,
-} = Astro.props;
+const { fullScreen = false, nextSectionUrl } = Astro.props;
 ---
-<section class="" class:list={[
-    'lg:flex lg:h-full items-center justify-center text-nut bg-canary-dark relative pt-20 pb-6 lg:pt-48 lg:pb-32',
-    {'lg:min-h-screen': fullScreen},
-]}>
+
+<section
+    class=""
+    class:list={[
+        'text-nut bg-canary-dark relative items-center justify-center pt-20 pb-6 lg:flex lg:h-full lg:pt-48 lg:pb-32',
+        { 'lg:min-h-screen': fullScreen },
+    ]}
+>
     <Container>
-        <slot/>
+        <slot />
     </Container>
-    {nextSectionUrl &&
-        <div class="hidden lg:block text-center lg:absolute lg:right-0 lg:bottom-0 lg:left-0">
-            <Central>
-                <div class="my-10 block">
-                    <NextSectionArrow nextSectionUrl={nextSectionUrl}/>
-                </div>
-            </Central>
-        </div>
+    {
+        nextSectionUrl && (
+            <div class="hidden text-center lg:absolute lg:right-0 lg:bottom-0 lg:left-0 lg:block">
+                <Central>
+                    <div class="my-10 block">
+                        <NextSectionArrow nextSectionUrl={nextSectionUrl} />
+                    </div>
+                </Central>
+            </div>
+        )
     }
 </section>

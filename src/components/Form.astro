@@ -3,60 +3,74 @@ import Row from './Form/Row.astro';
 import FormInput from './Form/Input.astro';
 import FormLabel from './Form/Label.astro';
 ---
+
 <form name="registration" method="POST" data-netlify="true">
     <Row>
-        <FormInput label="Adres e-mail" type="email" name="email"/>
+        <FormInput label="Adres e-mail" type="email" name="email" />
     </Row>
     <Row>
-        <FormInput label="Imię" type="text" name="name" attributes={{maxlength: 100}}/>
+        <FormInput label="Imię" type="text" name="name" attributes={{ maxlength: 100 }} />
     </Row>
     <Row>
-        <FormInput label="Nazwisko" type="text" name="surname" attributes={{maxlength: 100}}/>
+        <FormInput label="Nazwisko" type="text" name="surname" attributes={{ maxlength: 100 }} />
     </Row>
     <Row>
-        <FormInput label="Który raz będziesz na Wyprawie Roboczej?" type="number" name="expedition_count" attributes={{min: 1, max: 7}}/>
+        <FormInput label="Który raz będziesz na Wyprawie Roboczej?" type="number" name="expedition_count" attributes={{ min: 1, max: 7 }} />
     </Row>
     <Row>
-        <FormInput label="Co robisz? Co lubisz? Czym się zajmujesz?" type="textarea" name="about" attributes={{rows: 3, maxlength: 5000}}/>
+        <FormInput label="Co robisz? Co lubisz? Czym się zajmujesz?" type="textarea" name="about" attributes={{ rows: 3, maxlength: 5000 }} />
     </Row>
     <Row>
         <fieldset>
-            <FormLabel required={true} text="Czy chcesz poprowadzić na Wyprawie warsztat, wykład lub coś zupełnie innego?"/>
+            <FormLabel required={true} text="Czy chcesz poprowadzić na Wyprawie warsztat, wykład lub coś zupełnie innego?" />
 
-            <div class="text-lilac text-center min-w-xs border-1 border-lilac rounded-full inline-block py-2 px-24">
+            <div class="text-lilac border-lilac inline-block min-w-xs rounded-full border-1 px-24 py-2 text-center">
                 <div class="font-decorative text-6xl">-20% dla osób,</div>
                 <div class="text-base">które poprowadzą wykład lub warsztat</div>
             </div>
 
-            <span class="block mt-4">
-                <label class="inline-block mr-4"><input class="mr-2" id="activity_value_yes" name="activity" value="1" type="radio" required/>Tak, chętnie!</label>
-                <label class="inline-block mr-4"><input class="mr-2" name="activity" value="0" type="radio" required/>Nie, wolę słuchać</label>
+            <span class="mt-4 block">
+                <label class="mr-4 inline-block"
+                    ><input class="mr-2" id="activity_value_yes" name="activity" value="1" type="radio" required />Tak, chętnie!</label
+                >
+                <label class="mr-4 inline-block"><input class="mr-2" name="activity" value="0" type="radio" required />Nie, wolę słuchać</label>
             </span>
         </fieldset>
     </Row>
     <Row id="activity_description" hidden={true}>
-        <FormInput label="Super! Krótko opisz swoją propozycję. Daj znać jakich warunków i ile czasu potrzebujesz do jej realizacji." type="textarea" name="activity_description" required={false} attributes={{rows: 3, maxlength: 5000}}/>
+        <FormInput
+            label="Super! Krótko opisz swoją propozycję. Daj znać jakich warunków i ile czasu potrzebujesz do jej realizacji."
+            type="textarea"
+            name="activity_description"
+            required={false}
+            attributes={{ rows: 3, maxlength: 5000 }}
+        />
     </Row>
     <div class="mt-4 text-center lg:text-left">
-        <button class="uppercase cursor-pointer font-body text-sm sm:text-base lg:text-lg font-bold text-nut bg-canary-dark hover:bg-nut-dark hover:text-canary-dark py-3 px-10 rounded-full border-3 border-canary-dark" type="submit">Wyślij formularz</button>
+        <button
+            class="font-body text-nut bg-canary-dark hover:bg-nut-dark hover:text-canary-dark border-canary-dark cursor-pointer rounded-full border-3 px-10 py-3 text-sm font-bold uppercase sm:text-base lg:text-lg"
+            type="submit">Wyślij formularz</button
+        >
     </div>
 </form>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const activityRadios = document.querySelectorAll('input[name="activity"]');
-        const activityDescriptionField = document.getElementById('activity_description');
+        const activityRadios = document.querySelectorAll('input[name="activity"]') as NodeListOf<HTMLFormElement>;
+        const activityDescriptionField = document.getElementById('activity_description') as HTMLFormElement;
 
-        activityRadios.forEach((radio) => {
-            radio.addEventListener('change', () => {
-                if(radio.value === '1' && radio.checked) {
-                    activityDescriptionField.classList.add('block' );
-                    activityDescriptionField.classList.remove('hidden');
-                } else {
-                    activityDescriptionField.classList.remove('block');
-                    activityDescriptionField.classList.add('hidden');
-                }
+        if(activityRadios !== null) {
+            activityRadios.forEach((radio) => {
+                radio.addEventListener('change', () => {
+                    if (radio.value === '1' && radio.checked) {
+                        activityDescriptionField.classList.add('block');
+                        activityDescriptionField.classList.remove('hidden');
+                    } else {
+                        activityDescriptionField.classList.remove('block');
+                        activityDescriptionField.classList.add('hidden');
+                    }
+                });
             });
-        });
+        }
     });
 </script>

@@ -3,8 +3,11 @@ const { id, text } = Astro.props;
 
 const url = '#' + id;
 ---
-<a data-link={id}
-   data-modal-hide="mobile-menu"
-   class="block lg:inline-block lowercase text-3xl leading-none lg:font-bold py-2 lg:px-4 lg:border-white lg:border-1 hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-white lg:hover:text-black"
-   href={url}>{text}
+
+<a
+    data-link={id}
+    data-modal-hide="mobile-menu"
+    class="block py-2 text-3xl leading-none lowercase hover:opacity-80 lg:inline-block lg:border-1 lg:border-white lg:px-4 lg:font-bold lg:hover:bg-white lg:hover:text-black lg:hover:opacity-100"
+    href={url}
+    >{text}
 </a>

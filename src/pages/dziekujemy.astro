@@ -4,40 +4,42 @@ import Header from '../components/Header.astro';
 import Jumbotron from '../components/Jumbotron.astro';
 import JumbotronLink from '../components/JumbotronLink.astro';
 
-import {Image} from "astro:assets";
+import { Image } from 'astro:assets';
 import BoyImage from '../assets/boy.png';
 import JumbotronFooter from '../components/JumbotronFooter.astro';
 import JumbotronHeading from '../components/JumbotronHeading.astro';
 ---
+
 <Layout title="Dziękujemy | Wyprawa Robocza #7 - Znów">
     <Header />
     <main class="font-body">
         <Jumbotron>
-            <div class="w-full grid grid-cols-1 lg:flex lg:justify-between items-end gap-32 pb-16">
+            <div class="grid w-full grid-cols-1 items-end gap-32 pb-16 lg:flex lg:justify-between">
                 <div class="text-left">
-                    <JumbotronHeading title="Dziękujemy!"/>
+                    <JumbotronHeading title="Dziękujemy!" />
                     <div class="flex h-full items-center">
                         <div class="w-auto text-left text-xl lg:text-3xl">
-                            <p class="mb-4 lg:mb-8">Super, cieszymy się,  że chcesz jechać z nami! Na początku sierpnia damy Ci znać o kolejnych krokach.</p>
+                            <p class="mb-4 lg:mb-8">Super, cieszymy się, że chcesz jechać z nami! Na początku sierpnia damy Ci znać o kolejnych krokach.</p>
                             <p class="mb-4 lg:mb-8">Tymczasem możesz powspominać poprzednie Wyprawy:</p>
                             <ul>
                                 <li class="mb-4 lg:mb-8">
-                                    <JumbotronLink text="→ Archiwum Wypraw" url="/archiwum"/>
+                                    <JumbotronLink text="→ Archiwum Wypraw" url="/archiwum" />
                                 </li>
                                 <li class="mb-4 lg:mb-8">
-                                    <JumbotronLink text="→ instagram/grupa.robocza" url="https://www.instagram.com/grupa.robocza/"/>
+                                    <JumbotronLink text="→ instagram/grupa.robocza" url="https://www.instagram.com/grupa.robocza/" />
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <Image src={BoyImage}
-                       alt="Szczęśliwy chłopiec bawi się ciuchcią"
-                       class="justify-self-end max-w-[500px] w-full h-auto lg:px-4 xl:px-0"
-                       loading="eager"
+                <Image
+                    src={BoyImage}
+                    alt="Szczęśliwy chłopiec bawi się ciuchcią"
+                    class="h-auto w-full max-w-[500px] justify-self-end lg:px-4 xl:px-0"
+                    loading="eager"
                 />
             </div>
-            <JumbotronFooter/>
+            <JumbotronFooter />
         </Jumbotron>
     </main>
 </Layout>

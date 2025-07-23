@@ -9,14 +9,11 @@ interface Props {
 const {
     url,
     text = await Astro.slots.render('text'),
-    className = "uppercase font-body text-sm sm:text-base lg:text-lg font-bold  py-3 px-5 rounded-full border-3",
+    className = 'uppercase font-body text-sm sm:text-base lg:text-lg font-bold  py-3 px-5 rounded-full border-3',
     extraClassName = 'text-nut hover:bg-nut hover:text-canary border-nut',
 } = Astro.props;
-
 ---
-<a class:list={[
-    className,
-    extraClassName,
-]} href={url}>
+
+<a class:list={[className, extraClassName]} href={url}>
     <slot name="text">{text}</slot>
 </a>

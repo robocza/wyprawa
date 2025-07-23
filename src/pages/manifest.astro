@@ -2,14 +2,14 @@
 import Layout from '@layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Jumbotron from '../components/Jumbotron.astro';
-import {Image} from "astro:assets";
+import { Image } from 'astro:assets';
 import ChildhoodImage from '../assets/childhood.png';
 import JumbotronFooter from '../components/JumbotronFooter.astro';
 import JumbotronHeading from '../components/JumbotronHeading.astro';
 import Manifesto from '@components/manifesto/Content.md';
 import JumbotronSection from '../components/JumbotronSection.astro';
-
 ---
+
 <Layout title="Manifest | Wyprawa Robocza #7 - Znów">
     <Header />
     <main class="font-body">
@@ -23,17 +23,20 @@ import JumbotronSection from '../components/JumbotronSection.astro';
                         </Fragment>
                     </JumbotronHeading>
 
-                    <div class="marker:text-nut-dark prose prose-p:leading-tight prose-base lg:prose-2xl prose-p:text-nut-dark prose-p:font-body prose-ul:text-nut-dark prose-li:text-nut-dark prose-li:leading-tight prose-a:text-nut-dark prose-a:underline prose-a:hover:nut-dark prose-a:hover:text-canary">
+                    <div
+                        class="marker:text-nut-dark prose prose-p:leading-tight prose-base lg:prose-2xl prose-p:text-nut-dark prose-p:font-body prose-ul:text-nut-dark prose-li:text-nut-dark prose-li:leading-tight prose-a:text-nut-dark prose-a:underline prose-a:hover:nut-dark prose-a:hover:text-canary"
+                    >
                         <Manifesto />
                     </div>
                 </div>
-                <Image src={ChildhoodImage}
-                       alt="Dziecko zanurza się w marzeniach pełnych gwiazd"
-                       class="justify-self-end max-w-[500px] w-full h-auto px-4 xl:px-0"
-                       loading="eager"
+                <Image
+                    src={ChildhoodImage}
+                    alt="Dziecko zanurza się w marzeniach pełnych gwiazd"
+                    class="h-auto w-full max-w-[500px] justify-self-end px-4 xl:px-0"
+                    loading="eager"
                 />
             </JumbotronSection>
-            <JumbotronFooter/>
+            <JumbotronFooter />
         </Jumbotron>
     </main>
 </Layout>

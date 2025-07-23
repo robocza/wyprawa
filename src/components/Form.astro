@@ -4,7 +4,7 @@ import FormInput from './Form/Input.astro';
 import FormLabel from './Form/Label.astro';
 ---
 
-<form name="registration" method="POST" data-netlify="true">
+<form name="registration" method="POST" data-netlify="true" netlify-honeypot>
     <Row>
         <FormInput label="Adres e-mail" type="email" name="email" />
     </Row>

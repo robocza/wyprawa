@@ -10,6 +10,7 @@ Nie. Możesz być zupełnie z innej bańki. Tylko rzuć okiem na archiwalne agen
 
 Nie. Możesz też zaproponować luźniejszy temat. W minionych latach rozmawiałyśmy na przykład o rapie. Przykładowe tematy znajdziesz w linku z Wyprawy 2020. Możesz też rzucić okiem na zapisane stories na naszym Instagramie.
 
+→ [Wyprawa 2018 – Katowice](https://wyprawa.robocza.org/archiwum/wyprawa/1/)<br>
 → [Wyprawa 2020 – Poręba](https://mvu.pl/wyprawa/)<br>
 → [Wyprawa 2021 – Jaworzno](https://eden.mvu.pl/)<br>
 → [Wyprawa 2023 – Jaworzno](https://wyprawa.robocza.org/archiwum/wyprawa/6)<br>

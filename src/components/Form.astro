@@ -1,6 +1,7 @@
 ---
 import Row from './Form/Row.astro';
 import FormInput from './Form/Input.astro';
+import FormSelectExpeditionCount from './Form/SelectExpeditionCount.astro';
 import FormLabel from './Form/Label.astro';
 import Promo from '../assets/promo.svg';
 import { Image } from 'astro:assets';
@@ -22,7 +23,7 @@ import { Image } from 'astro:assets';
         <FormInput label="Nazwisko" type="text" name="surname" attributes={{ maxlength: 100 }} />
     </Row>
     <Row>
-        <FormInput label="Który raz będziesz na Wyprawie Roboczej?" type="number" name="expedition_count" attributes={{ min: 1, max: 7 }} />
+        <FormSelectExpeditionCount label="Który raz będziesz na Wyprawie Roboczej?" name="expedition_count" />
     </Row>
     <Row>
         <FormInput label="Co robisz? Co lubisz? Czym się zajmujesz?" type="textarea" name="about" attributes={{ rows: 3, maxlength: 5000 }} />

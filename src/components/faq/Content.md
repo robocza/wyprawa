@@ -17,4 +17,4 @@ Nie. Możesz też zaproponować luźniejszy temat. W minionych latach rozmawiał
 
 4. Kto organizuje Wyprawę?
 
-Fundacja Grupa Robocza. Więcej o nas możesz poczytać na stronie: https://grupa.robocza.org/ lub pooglądać nasz profil na Instagramie: https://www.instagram.com/grupa.robocza/.
+Fundacja Grupa Robocza. Więcej o nas możesz poczytać na stronie: https://grupa.robocza.org/.

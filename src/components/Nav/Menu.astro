@@ -1,0 +1,40 @@
+---
+import MenuLink from './MenuLink.astro';
+import MenuTextArchive from '../../assets/menu/archiwum.svg';
+import MenuTextManifesto from '../../assets/menu/manifest.svg';
+import MenuTextAbout from '../../assets/menu/o-nas.svg';
+import MenuTextInformation from '../../assets/menu/o-wyprawie.svg';
+---
+
+<nav class="flex flex-col items-center justify-start gap-y-8 lg:flex-row lg:gap-x-8">
+    <MenuLink title="O wyprawie" url="/">
+        <Fragment slot="text">
+            <span class="hidden lg:inline">O wyprawie</span>
+            <div class="lg:hidden"><MenuTextInformation /></div>
+        </Fragment>
+    </MenuLink>
+    <MenuLink title="Manifest" url="/manifest">
+        <Fragment slot="text">
+            <span class="hidden lg:inline">Manifest</span>
+            <div class="lg:hidden"><MenuTextManifesto /></div>
+        </Fragment>
+    </MenuLink>
+    <MenuLink title="Archiwum wypraw" url="/archiwum">
+        <Fragment slot="text">
+            <span class="hidden lg:inline">Archiwum wypraw</span>
+            <div class="lg:hidden"><MenuTextArchive /></div>
+        </Fragment>
+    </MenuLink>
+    <MenuLink title="O nas" url="https://grupa.robocza.org">
+        <Fragment slot="text">
+            <span class="hidden lg:inline">O nas</span>
+            <div class="lg:hidden"><MenuTextAbout /></div>
+        </Fragment>
+    </MenuLink>
+    <MenuLink
+        title="Zapisz się"
+        text="Zapisz się"
+        url="/zapisy"
+        extraClassName="mt-2 lg:mt-0 py-3 px-6 lg:py-2 lg:px-4 rounded-full border-3 lg:border-2 lg:border-nut border-canary-dark lg:border-nut font-body uppercase text-4xl lg:text-base text-bold"
+    />
+</nav>

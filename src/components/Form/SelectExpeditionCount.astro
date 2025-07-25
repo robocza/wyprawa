@@ -1,0 +1,27 @@
+---
+import FormLabel from './../Form/Label.astro';
+
+interface Props {
+    label: string;
+    name: string;
+    required?: boolean;
+}
+
+const { label, name, required = true } = Astro.props;
+---
+
+<FormLabel required={required} text={label}>
+    <select
+        class:list={['border-canary text-nut-dark mt-2 block w-full rounded border-3 bg-white px-2 py-1', 'max-w-[160px]']}
+        name={name}
+        {...required ? { required: true } : {}}
+    >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    </select>
+</FormLabel>

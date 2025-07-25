@@ -1,0 +1,56 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Form from '../components/Form.astro';
+import SectionBlock from '../components/SectionBlock.astro';
+import Link from '../components/Link.astro';
+import Jumbotron from '../components/Jumbotron.astro';
+
+import { Image } from 'astro:assets';
+import MoebiusImage from '../assets/moebius.png';
+import JumbotronLink from '../components/JumbotronLink.astro';
+import JumbotronHeading from '../components/JumbotronHeading.astro';
+import Section from '@components/Section.astro';
+---
+
+<Layout title="Zapisy | Wyprawa Robocza #7 - Znów">
+    <Header />
+    <main class="font-body">
+        <Jumbotron>
+            <div class="w-full gap-32 pb-16 lg:flex lg:items-end lg:justify-between">
+                <div class="text-left">
+                    <JumbotronHeading title="Zapisy na wyprawę" />
+                    <p class="mb-12 text-2xl lg:text-3xl">Jak to działa?</p>
+
+                    <div class="mb-16 flex h-full items-center lg:mb-0">
+                        <div class="w-auto text-left">
+                            <ol class="marker:text-lilac ml-16 list-outside list-[circled-decimal] text-2xl marker:text-5xl marker:font-bold lg:text-3xl">
+                                <li class="mb-8">
+                                    Wyraź chęć udziału w Wyprawie  i zapisz się przez → <JumbotronLink text="ten formularz" url="#formularz" />
+                                </li>
+                                <li class="mb-8">Po zakończeniu zapisów otrzymasz link do płatności.</li>
+                                <li>Płacąc, potwierdzisz swój udział w Wyprawie.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <Image src={MoebiusImage} alt="Wstęga Möbiusa" class="mx-auto max-w-1/2 lg:max-h-80 lg:w-auto lg:max-w-none lg:px-4 xl:px-0" loading="eager" />
+            </div>
+        </Jumbotron>
+        <Section id="formularz">
+            <SectionBlock>
+                <Fragment slot="title">
+                    <div>Formularz rejestracyjny</div>
+                    <Link
+                        text="→ Podstawowe informacje"
+                        url="/#informacje"
+                        className="text-canary hover:text-nut hover:bg-canary text-base text-lg underline"
+                    />
+                </Fragment>
+                <Form />
+            </SectionBlock>
+        </Section>
+        <Footer />
+    </main>
+</Layout>

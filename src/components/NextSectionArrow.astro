@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import DownArrowImage from '../assets/icons/down-arrow.png';
+
+interface Props {
+    nextSectionUrl: string;
+}
+
+const { nextSectionUrl } = Astro.props;
+---
+
+<a class="text-white hover:opacity-50" href={nextSectionUrl} title="Przejdź do kolejnej sekcji">
+    <Image src={DownArrowImage} alt="Strzałka w dół" class="max-h-30 w-auto" loading="eager" />
+</a>

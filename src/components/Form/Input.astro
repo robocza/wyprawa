@@ -1,0 +1,47 @@
+---
+import FormLabel from './../Form/Label.astro';
+
+interface Props {
+    label: string;
+    type: 'textarea' | 'email' | 'text' | 'number';
+    name: string;
+    required?: boolean;
+    attributes?: {
+        [key: string]: string | number;
+    };
+}
+
+const { label, type, name, required = true, attributes = [] } = Astro.props;
+---
+
+<FormLabel required={required} text={label}>
+    {
+        type === 'textarea' && (
+            <Fragment>
+                <textarea
+                    class:list={['border-canary text-nut-dark mt-2 block w-full max-w-[560px] rounded border-3 bg-white px-2 py-1']}
+                    name={name}
+                    {...(required ? { required: true } : {})}
+                    {...attributes}
+                />
+            </Fragment>
+        )
+    }
+    {
+        type !== 'textarea' && (
+            <Fragment>
+                <input
+                    class:list={[
+                        'border-canary text-nut-dark mt-2 block w-full rounded border-3 bg-white px-2 py-1',
+                        { 'max-w-[400px]': type === 'text' || type === 'email' },
+                        { 'max-w-[160px]': type === 'number' },
+                    ]}
+                    type={type}
+                    name={name}
+                    {...(required ? { required: true } : {})}
+                    {...attributes}
+                />
+            </Fragment>
+        )
+    }
+</FormLabel>

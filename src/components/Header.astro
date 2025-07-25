@@ -1,0 +1,25 @@
+---
+import LogoMVU from '../components/assets/LogoMVU.astro';
+import LogoPoweredByGrupaRobocza from '../components/assets/PoweredByGrupaRobocza.astro';
+import Container from '../layouts/elements/Container.astro';
+import Nav from './Nav.astro';
+---
+
+<header class="fixed top-0 z-50 mx-auto w-full flex-none duration-300 ease-in-out lg:transition-transform">
+    <div class="bg-canary-dark absolute inset-0"></div>
+    <Container>
+        <div class="relative mx-auto w-full">
+            <div class="flex h-16 w-full items-center justify-between lg:h-20">
+                <Nav />
+                <div class="flex items-center justify-end sm:gap-x-2 lg:gap-x-8">
+                    <a class="hidden items-center lg:flex" title="Minimum Viable Utopia" target="_blank" href="https://mvu.pl/">
+                        <LogoMVU />
+                    </a>
+                    <a class="hidden items-center lg:flex" title="Grupa Robocza" target="_blank" href="https://grupa.robocza.org/">
+                        <LogoPoweredByGrupaRobocza />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </Container>
+</header>

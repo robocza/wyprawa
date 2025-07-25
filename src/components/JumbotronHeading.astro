@@ -1,0 +1,7 @@
+---
+const { title = await Astro.slots.render('title') } = Astro.props;
+---
+
+<h1 class="mb-8 text-3xl font-bold uppercase lg:text-5xl">
+    <Fragment set:html={title} />
+</h1>

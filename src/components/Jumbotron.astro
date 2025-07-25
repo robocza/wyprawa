@@ -1,0 +1,35 @@
+---
+import Container from '../layouts/elements/Container.astro';
+import Central from '../layouts/elements/arrangement/Central.astro';
+import NextSectionArrow from './NextSectionArrow.astro';
+
+interface Props {
+    fullScreen?: boolean;
+    nextSectionUrl?: string;
+}
+
+const { fullScreen = false, nextSectionUrl } = Astro.props;
+---
+
+<section
+    class=""
+    class:list={[
+        'text-nut bg-canary-dark relative items-center justify-center pt-20 pb-6 lg:flex lg:h-full lg:pt-48 lg:pb-32',
+        { 'lg:min-h-screen': fullScreen },
+    ]}
+>
+    <Container>
+        <slot />
+    </Container>
+    {
+        nextSectionUrl && (
+            <div class="hidden text-center lg:absolute lg:right-0 lg:bottom-0 lg:left-0 lg:block">
+                <Central>
+                    <div class="my-10 block">
+                        <NextSectionArrow nextSectionUrl={nextSectionUrl} />
+                    </div>
+                </Central>
+            </div>
+        )
+    }
+</section>

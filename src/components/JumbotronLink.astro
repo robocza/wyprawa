@@ -1,0 +1,11 @@
+---
+import Link from './Link.astro';
+interface Props {
+    url: string;
+    text: string;
+}
+
+const { url, text } = Astro.props;
+---
+
+<Link url={url} text={text} className="text-nut bg-canary-dark hover:text-canary-dark hover:bg-nut underline" />

@@ -1,0 +1,12 @@
+---
+import SectionHeading from './SectionHeading.astro';
+
+const { id, title = await Astro.slots.render('title') } = Astro.props;
+---
+
+<div id={id} class="scroll-mt-8 lg:scroll-mt-20">
+    <SectionHeading title={title} />
+</div>
+<div class="col-span-2">
+    <slot />
+</div>

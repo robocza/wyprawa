@@ -3,9 +3,10 @@ interface Props {
     url: string;
     text: string;
     className?: string;
+    external?: boolean;
 }
 
-const { url, text, className = 'underline text-canary hover:text-nut hover:bg-canary' } = Astro.props;
+const { url, text, className = 'underline text-canary hover:text-nut hover:bg-canary', external = false } = Astro.props;
 ---
 
-<a class={className} href={url}>{text}</a>
+<a class={className} {...external ? { target: '_blank' } : {}} href={url}>{text}</a>

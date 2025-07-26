@@ -55,14 +55,18 @@ import Link from './Link.astro';
     <Row extraClassName="mt-4">
         <FormLabel required={true} text="Akceptuję regulamin">
             <Fragment slot="text">
-                Akceptuję <Link url="/regulamin" text="Regulamin" />
+                Akceptuję <Link url="/regulamin" text="Regulamin" external={true} />
             </Fragment>
             <Fragment slot="before">
                 <input class="mr-2" type="checkbox" name="terms_and_conditions_acceptance" value="1" required />
             </Fragment>
         </FormLabel>
         <div class="w-full max-w-[560px]">
-            Informacje o tym, w jaki sposób przetwarzamy Twoje dane osobowe znajdziesz w <Link url="/polityka-prywatnosci" text="Polityce prywatności" />.
+            Informacje o tym, w jaki sposób przetwarzamy Twoje dane osobowe znajdziesz w <Link
+                url="/polityka-prywatnosci"
+                text="Polityce prywatności"
+                external={true}
+            />.
         </div>
     </Row>
     <div class="mt-4 text-center lg:text-left">

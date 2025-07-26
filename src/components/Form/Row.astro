@@ -2,11 +2,12 @@
 interface Props {
     id?: string;
     hidden?: boolean;
+    extraClassName?: string;
 }
 
-const { id, hidden = false } = Astro.props;
+const { id, hidden = false, extraClassName = '' } = Astro.props;
 ---
 
-<div id={id} class:list={['pb-4 text-lg', { hidden: hidden }]}>
+<div id={id} class:list={['pb-4 text-lg', extraClassName, { hidden: hidden }]}>
     <slot />
 </div>

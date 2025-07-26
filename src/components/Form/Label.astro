@@ -4,12 +4,13 @@ interface Props {
     required: boolean;
 }
 
-const { text, required } = Astro.props;
+const { text = await Astro.slots.render('text'), required } = Astro.props;
 ---
 
 <label class="mb-4 block"
-    ><span class="inline-block max-w-md"
-        >{text}{
+    ><slot name="before" />
+    <span class="inline-block max-w-md"
+        ><slot name="text">{text}</slot>{
             required && (
                 <Fragment>
                      <sup>★</sup>

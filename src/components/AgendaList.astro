@@ -1,0 +1,16 @@
+---
+interface Props {
+    agenda: { day: string; events: { time: string; lecturer: string; title: string; description: string; }[]; }[]
+}
+
+const { agenda = [] } = Astro.props;
+
+import AgendaEntry from '../components/AgendaEntry.astro';
+---
+
+{agenda.map(({ day, events }) => (
+    <h2 class="not-prose text-4xl mb-8">{day}</h2>
+    <div class="divide-y divide-dashed divide-nut-dark">
+        <Fragment>{events.map((entry) => <AgendaEntry entry={entry}/>)}</Fragment>
+    </div>
+))}

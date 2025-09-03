@@ -1,0 +1,209 @@
+[
+  {
+    "day": "Piątek",
+    "events": [
+      {
+        "time": "13:00 - 16:00",
+        "lecturer": "",
+        "title": "Zameldowanie i obiad 🍔🍕🍔",
+        "description": ""
+      },
+      {
+        "time": "14:30 - 16:30",
+        "lecturer": "Janota & Starakiewicz",
+        "title": "Warsztat powitalny: Maski",
+        "description": "W ramach asynchronicznego warsztatu powitalnego zapraszamy Was do wspólnej zabawy. Będziemy wymyślać i tworzyć różnego rodzaju maski na nasze własne potrzeby. Jeśli macie własne materiały, które chcecie wykorzystać przy ich tworzeniu (na przykład błyszczące materiały do oklejania) - jak najbardziej możecie je przynieść ze sobą."
+      },
+      {
+        "time": "17:00 - 17:30",
+        "lecturer": "Grupa Robocza",
+        "title": "Otwarcie Wyprawy Roboczej",
+        "description": "-"
+      },
+      {
+        "time": "17:30 - 18:00",
+        "lecturer": "Kuba Kulesza, Agrocybernetyka",
+        "title": "Agropunk: uziemione projektowanie",
+        "description": "Czym jest agropunk i dlaczego warto mówić o nim jako o uziemieniu solarpunku? Opowiem o miejskim rolnictwie - jego cykliczności, konieczności i roli w kształtowaniu wspólnot. Sięgnę też do doświadczeń z projektowania systemowego i strategicznego w kontekście realizowania projektów rolniczych w mieście."
+      },
+      {
+        "time": "18:00 - 18:30",
+        "lecturer": "Iwona Szymańska",
+        "title": "Dostępność w kuluarach – jak, z kim i gdzie rozmawiać o dostępności, żeby mieć realny wpływ na jej kształtowanie?",
+        "description": "Na przykładzie pracy w BLIKU opowiem o wyzwaniach związanych z wdrażaniem dostępności. Jak wspólnie rozmawiać z biznesem, ustawodawcą i grupami osób o szczególnych potrzebach? Gdzie działać, żeby z powierzchownej rozmowy dotykającej tylko WCAG przejść do prawdziwego sedna problemu? Jak interpretować Polski Akt o Dostępności? Jak efektywnie dopraszać osoby z różnych grup do swoich prac badawczych i projektowych? Porozmawiamy też o tym, jak argumentować biznesowo potrzebę pracy nad dostępnością w obszarach, o których ustawodawca nie wspomniał i które nie są „wymogiem”. Zapraszam serdecznie!"
+      },
+      {
+        "time": "18:30 - 19:00",
+        "lecturer": "Kuba Kopecki",
+        "title": "DX - Dog Experience oczami człowieka",
+        "description": "Nie możemy jednoznacznie stwierdzić, czy psy rozumieją koncepcję \"User Experience\". Natomiast możemy zdecydowanie stwierdzić, że ich doświadczenia są kreowane. Przez kogo? Kto ma największy wpływ na DX? Czy sam pies? Opiekunowie_nki? Społeczeństwo? A może behawioryści, firmy, marketing, albo wielki biznes (Big-Dogma!)?"
+      },
+      {
+        "time": "19:00 - 20:00",
+        "lecturer": "",
+        "title": "Kolacja 🍔🍕🍔",
+        "description": ""
+      },
+      {
+        "time": "20:00 - 21:30",
+        "lecturer": "Nujska",
+        "title": "flirt towarzyski",
+        "description": ""
+      },
+      {
+        "time": "",
+        "lecturer": "Łukasz Pawluczuk",
+        "title": "Improwizuj, twórz, czuj: Powrót do radości projektowania",
+        "description": "Podczas 1.5-godzinnego warsztatu wykorzystamy praktyki z improwizacji teatralnej, by wspólnie stworzyć przestrzeń, w której doświadczymy, co staje się możliwe w procesie wspólnej zabawy. Nauczymy się ufać sobie nawzajem i wspólnie budować coś z niczego.\n\nPrzejdziemy przez serię krótkich gier i ćwiczeń, które pomogą nam dopuścić do głosu swoją intuicję, spontaniczność, radość tworzenia i bycia „tu i teraz”, z uważnością na siebie i innych. Poszukamy w sobie wspólnotowej kreatywności, będziemy przełamywać schematy i własne ograniczenia, a także popełniać błędy, gubić się i śmiać.\n\nJeśli brak Ci doświadczenia scenicznego lub teatralnego — tym lepiej! Nie musisz mieć żadnych specjalnych umiejętności. Ten warsztat to zaproszenie do twórczej dywersji, która obudzi w Tobie wewnętrzne dziecko, pozwoli zapomnieć się na chwilę i dobrze bawić. Zaczniemy powoli, delikatnie, a potem zobaczymy, gdzie zawiedzie nas nasza intuicja. W impro nie ma błędów — są tylko nowe możliwości i zaskakujące efekty."
+      },
+      {
+        "time": "",
+        "lecturer": "Katarzyna Spytkowska & Wiktoria Łucarz",
+        "title": "Wrażliwie i czule o relacji z technologią cyfrową",
+        "description": "W bezpiecznej przestrzeni czułości i uważności spróbujemy nie tyle porozmawiać, co wsłuchać się w puls naszej relacji z technologią cyfrową. \nZatrzymamy się na chwilę, by poczuć, co w nas porusza, koi, a co uwiera i frustruje.\nBez ciężaru eksperckich ram pozwolimy sobie na doświadczenie, dzielenie się wrażeniami i badanie emocji, jakie wywołuje w nas cyfrowy świat.\nSkupimy się zarówno na tym, co jest dziś, jak i na wizjach lepszych światów, które możemy wspólnie wymarzyć."
+      },
+      {
+        "time": "22:00 - 1:00 (?)",
+        "lecturer": "DJ Adam Tuna",
+        "title": "Impreza",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "day": "Sobota",
+    "events": [
+      {
+        "time": "8:15 - 9:00",
+        "lecturer": "Anna Sarnowska",
+        "title": "Poranna joga",
+        "description": "Rozpoczęcie dnia poprzez oddech, rozciąganie i proste sekwencje ruchowe. Jeśli pogoda pozwoli, zajęcia odbędą się na świeżym powietrzu. Prosimy o zabranie własnych mat do ćwiczeń."
+      },
+      {
+        "time": "9:00 - 10:00",
+        "lecturer": "",
+        "title": "Sniadanie 🍔🍕🍔",
+        "description": ""
+      },
+      {
+        "time": "10:00 - 10:30",
+        "lecturer": "Magda Starakiewicz",
+        "title": "Mielonka bitowa. Jak być d00pkiem w Internecie.",
+        "description": "Dane to nowy olej nowa ropa. Co to znaczy? Żeby je zawłaszczać kapitaliści niszczą ekosystemy, żeby na nich zarabiać tworzą nieprzejrzyste struktury władzy… to już wiemy.\nTylko dlaczego słysząc ten bon mot chrupie nam w kościach? Nasze zdatafikowane, mielone na paszę dla algorytmów ciała są zmęczone pracą w technofeudalnym systemie inwigilacji i produkcji danych. Shoshana Zuboff pisze o daremności indywidualnych aktów ochrony prywatności i potrzebie zbiorowego, politycznego działania, ale tu i teraz potrzebujemy sprawczości i manifestów, które będą nas porywały i dawały nadzieję. Psucie zabawy analitykom danych wydaje się być super pomysłem. (≖ᴗ≖) Po co dane ukrywać, skoro można je psuć!\nPo krótkim wstępie o danych z perspektyw praktycznej i feministycznej pokażę kilka praktyk ‘mikrosprawczości’, które w chwilach przytłoczenia pozwolą Wam pokazać środkowy palec BigTechowemu nadzorcy. Bardzo smol. 🌸"
+      },
+      {
+        "time": "10:30 - 11:00",
+        "lecturer": "Kociszewski możę??",
+        "title": "",
+        "description": ""
+      },
+      {
+        "time": "11:00 - 11:30",
+        "lecturer": "Tomasz Gargula",
+        "title": "UNIEZALEŻNIANIE SIĘ OD SAASÓW",
+        "description": ""
+      },
+      {
+        "time": "11:30 - 12:00",
+        "lecturer": "",
+        "title": "Przerwa",
+        "description": ""
+      },
+      {
+        "time": "12:00 - 12:30",
+        "lecturer": "Julia Papée",
+        "title": "Podróże z kursorem w dłoni. Jak kultura kształtuje doświadczenie użytkownika?",
+        "description": "Nasza planeta od dawna oplata się siecią kabli, łącząc nas w jedną globalną, internetową wioskę. Ale czy interfejsy, z których korzystamy, rzeczywiście stawiają nas wszystkich w tym samym świetle?\nPodróżując po różnych krajach, często mówimy o odkrywaniu nowych kultur, czasem zupełnie odmiennych od tych, które dobrze znamy. Niekiedy różnice odczuwamy nawet w krótszych podróżach z regionu do regionu. A jak wygląda to w świecie naszych „podróży” z kursorem w dłoni?\n\nZapraszam na wystąpienie poświęcone projektowaniu międzykulturowemu, czyli o tym, jak interfejsy mogą się różnić w zależności od kontekstu kulturowego i co te różnice oznaczają dla projektantów."
+      },
+      {
+        "time": "12:30 - 13:00",
+        "lecturer": "Michał Szota",
+        "title": "WEB DESIGNER CO SIĘ NAUCZYŁEM",
+        "description": ""
+      },
+      {
+        "time": "13:00 - 13:30",
+        "lecturer": "Daniel Platek",
+        "title": "Detekcja władzy i światy społeczne w sieciach",
+        "description": "Prawdziwa władza zawsze ukrywa się w niewidocznych strukturach. Jej zaobserwowanie jest niemożliwe dopóki nie uruchomimy całego zestawu narzędzi pozwalających na odtworzenie złożonego pola wzajemnych wpływów i przenikających się klik. Na przykładzie ostatniego konklawe papieskiego postaram się pokazać publiczności, w jaki sposób możemy odtworzyć sieci relacji i wyznaczyć w nich najbardziej centralne pozycje, tak, by móc przewidzieć wybór kardynała o największej sile strukturalnej.\n\nNie tylko świat rzeczywisty, także powieści detektywistyczne posiadają zaszyte w sobie struktury władzy. W drugiej części rozłożę na części sieci dwóch przedwojennych powieści detektywistycznych – „Rycerze Mroku” i „Prokurator Garda”. Celem jest znalezienie w nich postaci, które robią najwięcej rzeczy innym postaciom (całują, biją, pytają, odprowadzają etc.) i tym samym są najbardziej sprawcze. Następnie postaciom zostają nadane atrybuty klas społecznych, po to by zobaczyć w jakim otoczeniu funkcjonują władcy fikcyjnych światów."
+      },
+      {
+        "time": "13:30 - 16:00",
+        "lecturer": "",
+        "title": "Obiad i leżakowanie 🍔🍕🍔",
+        "description": ""
+      },
+      {
+        "time": "16:00 - 17:30",
+        "lecturer": "Magda Starakiewicz",
+        "title": "Randka z awatarem: ćwiczenia z podwójności.",
+        "description": "Cyfrowe sobowtóry mieszkają na platformach, chociaż czasem i pomiędzy nimi. Jeśli chcesz jakiegoś spotkać zastanów się czy Twoja bliska osoba na WhatsAppie to ta sama, z którą idziesz do kina.\nDoświadczamy kryzysu sprawczości. Widzimy jak demokracja wyrodnieje w infokrację, a dane wysysane przez BigTech z naszych dusz i ciał służą im do produkcji danowych golemów. Tymczasem my tworzymy swoje awatary. To akt twórczy i sprawczy! Niby wykrzywione, poprawione, zawsze jednak zachowują podobieństwo do nas - uczą się, kochają i doświadczają. Nasi kochani nieumarli. 🖤\nNa warsztacie za pomocą prostych wizualizacji poznamy swoje awatary i zadamy im czułe pytania. Zastanowimy się jakie są, czego możemy się od nich nauczyć i jak mogą nas zainspirować."
+      },
+      {
+        "time": "",
+        "lecturer": "Adam Tuna",
+        "title": "Warsztat DJ",
+        "description": ""
+      },
+      {
+        "time": "",
+        "lecturer": "Aleksandra Szlęk",
+        "title": "Mapowanie pamięci",
+        "description": "Warsztaty proponują spojrzenie na wizualność, a w szczególności infografikę, diagram, mapę – jako narzędzie umożliwiające głębsze poznanie siebie. Mapowanie może pełnić rolę narzędzia widzotwórczego oraz pomóc nam pogłębić wgląd w siebie poprzez wykorzystanie języka wizualnego. Ćwiczenia polegające na próbie skonstruowania mapy mentalnej będą pretekstem do odnalezienia niewidocznych na pierwszy rzut oka powiązań i zależności, a co za tym idzie – pogłębienia wglądu w siebie. Będziemy pracować głównie z zagadnieniami przeszłości i przyszłości, poszukiwać relacji, metafor i symboli, wypracowywać własny język wizualny. Warsztaty mają charakter luźnych ćwiczeń, bardziej istotny jest proces, niż efekt końcowy. Umiejętności rysunkowe nie są wymagane!\n\nPrzed warsztatem proszę o wybór jednej fotografii portretowej siebie (ale nie selfie!) oraz jednego zdjęcia przedstawiającego bliską osobę (np. rodziców). Ważne, żeby móc uzasadnić w kilku słowach wybór konkretnych zdjęć."
+      },
+      {
+        "time": "18:00 - 18:30",
+        "lecturer": "",
+        "title": "🍭",
+        "description": ""
+      },
+      {
+        "time": "19:00 - 20:00",
+        "lecturer": "",
+        "title": "Kolacja 🍔🍕🍔",
+        "description": ""
+      },
+      {
+        "time": "21:00 - 22:00",
+        "lecturer": "",
+        "title": "Prezentacje na 4 minuty i 52 sekundy",
+        "description": "Bar-camp"
+      },
+      {
+        "time": "22:00 - 1:00 (?)",
+        "lecturer": "",
+        "title": "Impreza",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "day": "Niedziela",
+    "events": [
+      {
+        "time": "8:15 - 9:00",
+        "lecturer": "Anna Sarnowska",
+        "title": "Poranna joga",
+        "description": "Rozpoczęcie dnia poprzez oddech, rozciąganie i proste sekwencje ruchowe. Jeśli pogoda pozwoli, zajęcia odbędą się na świeżym powietrzu. Prosimy o zabranie własnych mat do ćwiczeń."
+      },
+      {
+        "time": "9:00 - 10:00",
+        "lecturer": "",
+        "title": "Sniadanie 🍔🍕🍔",
+        "description": ""
+      },
+      {
+        "time": "10:00 - 11:00",
+        "lecturer": "Grupa Robocza",
+        "title": "Podsumowanie Wyprawy Roboczej",
+        "description": ""
+      },
+      {
+        "time": "11:00 - 11:30",
+        "lecturer": "Grupa Robocza",
+        "title": "Wspólne zdjęcie i pożegnanie",
+        "description": ""
+      }
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 ---
 import MenuLink from './MenuLink.astro';
-import MenuTextArchive from '../../assets/menu/archiwum.svg';
+// import MenuTextArchive from '../../assets/menu/archiwum.svg';
+import MenuTextAgenda from '../../assets/menu/agenda.svg';
 import MenuTextManifesto from '../../assets/menu/manifest.svg';
 import MenuTextAbout from '../../assets/menu/o-nas.svg';
 import MenuTextInformation from '../../assets/menu/o-wyprawie.svg';
@@ -19,10 +20,10 @@ import MenuTextInformation from '../../assets/menu/o-wyprawie.svg';
             <div class="lg:hidden"><MenuTextManifesto /></div>
         </Fragment>
     </MenuLink>
-    <MenuLink title="Archiwum wypraw" url="/archiwum">
+    <MenuLink title="Agenda" url="/agenda">
         <Fragment slot="text">
-            <span class="hidden lg:inline">Archiwum wypraw</span>
-            <div class="lg:hidden"><MenuTextArchive /></div>
+            <span class="hidden lg:inline">Agenda</span>
+            <div class="lg:hidden"><MenuTextAgenda /></div>
         </Fragment>
     </MenuLink>
     <MenuLink title="O nas" url="https://grupa.robocza.org">

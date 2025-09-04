@@ -5,13 +5,13 @@
       {
         "time": "13:00 - 16:00",
         "lecturer": "",
-        "title": "Zameldowanie i obiad 🍔🍕🍔",
+        "title": "Zameldowanie i obiad 🚪🍕",
         "description": ""
       },
       {
         "time": "14:30 - 16:30",
         "lecturer": "Janota & Starakiewicz",
-        "title": "Warsztat powitalny: Maski",
+        "title": "Maski – słońca, psy i my (warsztat powitalny)",
         "description": "W ramach asynchronicznego warsztatu powitalnego zapraszamy Was do wspólnej zabawy. Będziemy wymyślać i tworzyć różnego rodzaju maski na nasze własne potrzeby. Jeśli macie własne materiały, które chcecie wykorzystać przy ich tworzeniu (na przykład błyszczące materiały do oklejania) - jak najbardziej możecie je przynieść ze sobą."
       },
       {
@@ -22,7 +22,7 @@
       },
       {
         "time": "17:30 - 18:00",
-        "lecturer": "Kuba Kulesza, Agrocybernetyka",
+        "lecturer": "Kuba Kulesza",
         "title": "Agropunk: uziemione projektowanie",
         "description": "Czym jest agropunk i dlaczego warto mówić o nim jako o uziemieniu solarpunku? Opowiem o miejskim rolnictwie - jego cykliczności, konieczności i roli w kształtowaniu wspólnot. Sięgnę też do doświadczeń z projektowania systemowego i strategicznego w kontekście realizowania projektów rolniczych w mieście."
       },
@@ -41,29 +41,29 @@
       {
         "time": "19:00 - 20:00",
         "lecturer": "",
-        "title": "Kolacja 🍔🍕🍔",
+        "title": "Kolacja 🍝🍷",
         "description": ""
       },
       {
         "time": "20:00 - 21:30",
-        "lecturer": "Nujska",
-        "title": "flirt towarzyski",
-        "description": ""
+        "lecturer": "Katarzyna Alexandrowitsch",
+        "title": "Cards Pro Community - graj i gadaj",
+        "description": "Czy przestrzeń klubowa może stać się polem eksperymentu społecznego, gdzie testujemy nowe formy komunikacji i współbycia? W ramach tego warsztatu będziemy testować karty konwersacyjne Cards Pro Community, czerpiąc z metod edukacji antydyskryminacyjnej i pedagogiki doświadczenia. Powrócimy do intuicyjnego projektowania, o którym mówi manifest Wyprawy: rezygnujemy z ciężkich frameworków na rzecz zabawy, obserwacji i zaufania do procesu. Warsztat łączy projektowanie produktu z eksperymentowaniem społecznym: klub staje się mikro-laboratorium, gdzie testujemy nie tylko użyteczność kart, ale także praktyki inkluzywności, zgody i dostępności."
       },
       {
-        "time": "",
+        "time": "20:00 - 21:30",
         "lecturer": "Łukasz Pawluczuk",
         "title": "Improwizuj, twórz, czuj: Powrót do radości projektowania",
         "description": "Podczas 1.5-godzinnego warsztatu wykorzystamy praktyki z improwizacji teatralnej, by wspólnie stworzyć przestrzeń, w której doświadczymy, co staje się możliwe w procesie wspólnej zabawy. Nauczymy się ufać sobie nawzajem i wspólnie budować coś z niczego.\n\nPrzejdziemy przez serię krótkich gier i ćwiczeń, które pomogą nam dopuścić do głosu swoją intuicję, spontaniczność, radość tworzenia i bycia „tu i teraz”, z uważnością na siebie i innych. Poszukamy w sobie wspólnotowej kreatywności, będziemy przełamywać schematy i własne ograniczenia, a także popełniać błędy, gubić się i śmiać.\n\nJeśli brak Ci doświadczenia scenicznego lub teatralnego — tym lepiej! Nie musisz mieć żadnych specjalnych umiejętności. Ten warsztat to zaproszenie do twórczej dywersji, która obudzi w Tobie wewnętrzne dziecko, pozwoli zapomnieć się na chwilę i dobrze bawić. Zaczniemy powoli, delikatnie, a potem zobaczymy, gdzie zawiedzie nas nasza intuicja. W impro nie ma błędów — są tylko nowe możliwości i zaskakujące efekty."
       },
       {
-        "time": "",
+        "time": "20:00 - 21:30",
         "lecturer": "Katarzyna Spytkowska & Wiktoria Łucarz",
         "title": "Wrażliwie i czule o relacji z technologią cyfrową",
         "description": "W bezpiecznej przestrzeni czułości i uważności spróbujemy nie tyle porozmawiać, co wsłuchać się w puls naszej relacji z technologią cyfrową. \nZatrzymamy się na chwilę, by poczuć, co w nas porusza, koi, a co uwiera i frustruje.\nBez ciężaru eksperckich ram pozwolimy sobie na doświadczenie, dzielenie się wrażeniami i badanie emocji, jakie wywołuje w nas cyfrowy świat.\nSkupimy się zarówno na tym, co jest dziś, jak i na wizjach lepszych światów, które możemy wspólnie wymarzyć."
       },
       {
-        "time": "22:00 - 1:00 (?)",
+        "time": "22:00 - 1:00",
         "lecturer": "DJ Adam Tuna",
         "title": "Impreza",
         "description": ""
@@ -76,13 +76,13 @@
       {
         "time": "8:15 - 9:00",
         "lecturer": "Anna Sarnowska",
-        "title": "Poranna joga",
+        "title": "Poranna joga #1",
         "description": "Rozpoczęcie dnia poprzez oddech, rozciąganie i proste sekwencje ruchowe. Jeśli pogoda pozwoli, zajęcia odbędą się na świeżym powietrzu. Prosimy o zabranie własnych mat do ćwiczeń."
       },
       {
         "time": "9:00 - 10:00",
         "lecturer": "",
-        "title": "Sniadanie 🍔🍕🍔",
+        "title": "Sniadanie 🥪",
         "description": ""
       },
       {
@@ -93,20 +93,20 @@
       },
       {
         "time": "10:30 - 11:00",
-        "lecturer": "Kociszewski możę??",
-        "title": "",
-        "description": ""
+        "lecturer": "Agnieszka Zgud",
+        "title": "TBA",
+        "description": "TBA"
       },
       {
         "time": "11:00 - 11:30",
         "lecturer": "Tomasz Gargula",
-        "title": "UNIEZALEŻNIANIE SIĘ OD SAASÓW",
-        "description": ""
+        "title": "Open source i self-hosting, czyli jak wyrwać się z korporacyjnego klinczu w Internecie",
+        "description": "Nie można nie ulec wrażeniu, że Internet staje się coraz mniej przyjaznym miejscem. Doświadczenie użytkownika przestaje się liczyć, jeśli nie przekłada się na zarobki firmy. Wartościowe treści są zastępowane przez AI slop. Każdy nasz ruch w Internecie jest śledzony, a nasze dane stały się walutą dla korporacji. Jesteśmy mocno uzależnieni od korzystania z różnych serwisów internetowych — ciężko wyobrazić sobie integracje społeczne bez Instagrama, obejrzenie filmu bez Netflixa, czy granie bez Steama.\n\nCzy jesteśmy skazani na łaskę internetowych gigantów? Zapraszam na wykład, na którym porozmawiamy o aplikacjach otwartoźródłowych, self-hostingu oraz innych sposobach walki o lepszy i bardziej proludzki Internet."
       },
       {
         "time": "11:30 - 12:00",
         "lecturer": "",
-        "title": "Przerwa",
+        "title": "Przerwa ☕️",
         "description": ""
       },
       {
@@ -118,8 +118,8 @@
       {
         "time": "12:30 - 13:00",
         "lecturer": "Michał Szota",
-        "title": "WEB DESIGNER CO SIĘ NAUCZYŁEM",
-        "description": ""
+        "title": "Pola poszerzania wolności, empatycznej wrażliwości i tradycyjnych wartości, czyli moje małe obszary praktyk libertariańskich, socjalistycznych i konserwatywnych.",
+        "description": "Jestem projektantem, developerem i VJ-em z kilkunastoletnim doświadczeniem. W każdej z tych różnych ról posługuję się innymi strategiami, które mają zaowocować dobrą robotą i satysfakcją z życia. Chciałbym przedstawić obecny stan swojej rozkminki na ten temat, prezentując parę przykładów ze swojego portfolio, odnotowując kilka niewielkich zwycięstw, ale też składając samokrytykę. Planuję poruszyć kwestie płodozmianu, poczucia bezpieczeństwa, eksperymentów, kasy, zestawu narzędzi, fomo i inspiracji. \n\n@michalszota (offline 1982-1996)"
       },
       {
         "time": "13:00 - 13:30",
@@ -130,7 +130,7 @@
       {
         "time": "13:30 - 16:00",
         "lecturer": "",
-        "title": "Obiad i leżakowanie 🍔🍕🍔",
+        "title": "Obiad i leżakowanie 🍔😴",
         "description": ""
       },
       {
@@ -140,13 +140,13 @@
         "description": "Cyfrowe sobowtóry mieszkają na platformach, chociaż czasem i pomiędzy nimi. Jeśli chcesz jakiegoś spotkać zastanów się czy Twoja bliska osoba na WhatsAppie to ta sama, z którą idziesz do kina.\nDoświadczamy kryzysu sprawczości. Widzimy jak demokracja wyrodnieje w infokrację, a dane wysysane przez BigTech z naszych dusz i ciał służą im do produkcji danowych golemów. Tymczasem my tworzymy swoje awatary. To akt twórczy i sprawczy! Niby wykrzywione, poprawione, zawsze jednak zachowują podobieństwo do nas - uczą się, kochają i doświadczają. Nasi kochani nieumarli. 🖤\nNa warsztacie za pomocą prostych wizualizacji poznamy swoje awatary i zadamy im czułe pytania. Zastanowimy się jakie są, czego możemy się od nich nauczyć i jak mogą nas zainspirować."
       },
       {
-        "time": "",
-        "lecturer": "Adam Tuna",
-        "title": "Warsztat DJ",
+        "time": "16:00 - 17:30",
+        "lecturer": "TBA",
+        "title": "TBA",
         "description": ""
       },
       {
-        "time": "",
+        "time": "16:00 - 17:30",
         "lecturer": "Aleksandra Szlęk",
         "title": "Mapowanie pamięci",
         "description": "Warsztaty proponują spojrzenie na wizualność, a w szczególności infografikę, diagram, mapę – jako narzędzie umożliwiające głębsze poznanie siebie. Mapowanie może pełnić rolę narzędzia widzotwórczego oraz pomóc nam pogłębić wgląd w siebie poprzez wykorzystanie języka wizualnego. Ćwiczenia polegające na próbie skonstruowania mapy mentalnej będą pretekstem do odnalezienia niewidocznych na pierwszy rzut oka powiązań i zależności, a co za tym idzie – pogłębienia wglądu w siebie. Będziemy pracować głównie z zagadnieniami przeszłości i przyszłości, poszukiwać relacji, metafor i symboli, wypracowywać własny język wizualny. Warsztaty mają charakter luźnych ćwiczeń, bardziej istotny jest proces, niż efekt końcowy. Umiejętności rysunkowe nie są wymagane!\n\nPrzed warsztatem proszę o wybór jednej fotografii portretowej siebie (ale nie selfie!) oraz jednego zdjęcia przedstawiającego bliską osobę (np. rodziców). Ważne, żeby móc uzasadnić w kilku słowach wybór konkretnych zdjęć."
@@ -154,13 +154,13 @@
       {
         "time": "18:00 - 18:30",
         "lecturer": "",
-        "title": "🍭",
+        "title": "Waciarz 🍭",
         "description": ""
       },
       {
         "time": "19:00 - 20:00",
         "lecturer": "",
-        "title": "Kolacja 🍔🍕🍔",
+        "title": "Kolacja 🍝🍷",
         "description": ""
       },
       {
@@ -183,13 +183,13 @@
       {
         "time": "8:15 - 9:00",
         "lecturer": "Anna Sarnowska",
-        "title": "Poranna joga",
+        "title": "Poranna joga #2",
         "description": "Rozpoczęcie dnia poprzez oddech, rozciąganie i proste sekwencje ruchowe. Jeśli pogoda pozwoli, zajęcia odbędą się na świeżym powietrzu. Prosimy o zabranie własnych mat do ćwiczeń."
       },
       {
         "time": "9:00 - 10:00",
         "lecturer": "",
-        "title": "Sniadanie 🍔🍕🍔",
+        "title": "Śniadanie 🥪",
         "description": ""
       },
       {

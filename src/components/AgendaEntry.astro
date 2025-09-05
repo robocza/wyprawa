@@ -15,6 +15,6 @@ const { entry } = Astro.props;
     <h4>{entry.lecturer}</h4>
     <span class="time">{entry.time}</span>
     <p class="mt-0">
-        {entry.description}
+        <Fragment set:html={entry.description} />
     </p>
 </div>
